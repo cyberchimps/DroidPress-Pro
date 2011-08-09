@@ -151,8 +151,6 @@
 	
 	<div id="page-wrap">
 		
-		<div id="main">
-
 			<div id="header">
 				<div id="headerwrap">
 					<div id="header_right">
@@ -171,13 +169,8 @@
 								<h1 class="sitename"><a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?> </a></h1>
 							</div>
 						<?php endif;?>
-					<div id="description">
-						<h1 class="description"><?php bloginfo('description'); ?></h1>
-					</div>
 				</div><!-- end headerwrap -->
-				
-				<div style="background-color: #3b5a7b;border: 2px solid #fff;">
-					<?php get_template_part('nav', 'header' ); ?>
-				</div>
-					
 			</div><!-- end header -->
+
+			<div id="main">
+			<?php get_template_part('nav', 'header' ); ?>

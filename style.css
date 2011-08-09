@@ -28,7 +28,11 @@ body { font-size: 14px;	}
 	margin-bottom: 10px;
 }
 
-#main { width: 980px; }
+#main { 
+	width: 980px;
+	background-color: white;
+	border: 2px solid #fff;
+}
 
 /* Fonts  */
 
@@ -193,7 +197,6 @@ input[type=text] { width: 120px; }
 	width: 100%;
 	min-height: 330px;
 	margin: 5px 0 5px 0;
-	background-color: #fff;
 }
 
 #content_left {
@@ -780,19 +783,9 @@ li { padding-left: 5px; }
 	background-color: #3b5a7b;
 }
 
-#homebutton {
-	float: left; 
-	border-right: 1px solid #444;
-	width: 80px;
-	border-right: 1px solid #444;
-	height: 35px;
-}
-
-#homebutton a:hover img { opacity:.6; }
-
 #sfwrapper {
     float:              left;
-    width:              70%;
+    width: 				66%;
     background:         transparent;
     font-size:          1em;
     height: 			38px;
