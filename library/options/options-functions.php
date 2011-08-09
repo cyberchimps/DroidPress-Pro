@@ -61,24 +61,6 @@ function featured_image_alignment() {
 add_action( 'wp_head', 'featured_image_alignment');
 
 
-/* Hide Header*/
-
-function hide_header() {
-
-	global $themename, $themeslug, $options;
-
-	if ($options[$themeslug.'_hide_header'] == "1") {
-
-		echo '<style type="text/css">';
-		echo "#headerwrap {display: none;}";
-		echo "#header {height: 40px; margin-top: 10px;}";
-		echo '</style>';
-		
-	}
-	
-}
-add_action( 'wp_head', 'hide_header');
-
 /* Post Meta Data width */
 
 function post_meta_data_width() {
@@ -201,40 +183,6 @@ function add_posttitle_color() {
 
 }
 add_action( 'wp_head', 'add_posttitle_color');
-
-/* Hide search/home button */
-
-function fullwidth_nav() {
-
-	global $themename, $themeslug, $options;
-
-	if ($options[$themeslug.'_hide_search'] == "1" && $options[$themeslug.'_hide_home_icon'] == "") {
-		
-		echo '<style type="text/css">';
-		echo "#searchbar {display: none;}";
-		echo "#sfwrapper {width: 91%;}";
-		echo '</style>';
-	}
-
-	elseif ($options[$themeslug.'_hide_search'] == "" && $options[$themeslug.'_hide_home_icon'] == "1" ) {
-
-		echo '<style type="text/css">';
-		echo "#homebutton {display: none;}";
-		echo "#sfwrapper {width: 79%; padding-left: 5px;}";
-		echo '</style>';
-	}
-
-	elseif ($options[$themeslug.'_hide_search'] == "1" && $options[$themeslug.'_hide_home_icon'] == "1" ) {
-
-		echo '<style type="text/css">';
-		echo "#homebutton {display: none;}";
-		echo "#searchbar {display: none;}";
-		echo "#sfwrapper {width: 100%; padding-left: 5px;}";
-		echo '</style>';
-	}
-
-}
-add_action( 'wp_head', 'fullwidth_nav');
 
 /* Footer Color */
 

@@ -781,6 +781,7 @@ li { padding-left: 5px; }
 	width: 980px;
 	display: block;
 	background-color: #3b5a7b;
+	position: absolute;
 }
 
 #sfwrapper {
