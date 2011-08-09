@@ -19,17 +19,7 @@
 
 /* End variable definition. */
 
-?>
-
-<?php 
-				
-	if ($options[$themeslug.'_menu_color'] == "") {
-		$menucolor = 'Grey';
-	}
-	else {
-		$menucolor = $options[($themeslug.'_menu_color')]; 
-	}	
-?>		
+?>	
 				
 <div id ="navbackground">
 <div id="navcontainer">

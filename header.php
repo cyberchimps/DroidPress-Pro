@@ -156,21 +156,6 @@
 			<div id="header">
 				<div id="headerwrap">
 					<div id="header_right">
-						<!-- Inserts Header Contact Area -->
-		
-							<?php if ($headercontact == '' ):?>
-							<div id="header_contact">
-								Enter Contact Information Here
-							</div>
-							<?php endif;?>
-							<?php if ($headercontact != 'hide' ):?>
-							<div id="header_contact1">
-								<?php echo stripslashes ($headercontact); ?></div> 
-							<?php endif;?>
-							<?php if ($headercontact == 'hide' ):?>
-								<div style ="height: 10%;">&nbsp;</div> 
-							<?php endif;?>
-						<br />
 							<div id="social">
 								<?php get_template_part('icons', 'header'); ?>
 							</div><!-- end social -->
@@ -191,6 +176,8 @@
 					</div>
 				</div><!-- end headerwrap -->
 				
-				<?php get_template_part('nav', 'header' ); ?>
-				
+				<div style="background-color: #3b5a7b;border: 2px solid #fff;">
+					<?php get_template_part('nav', 'header' ); ?>
+				</div>
+					
 			</div><!-- end header -->

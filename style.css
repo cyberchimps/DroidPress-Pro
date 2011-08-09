@@ -1,10 +1,10 @@
 /*   
-Theme Name: iFeature Pro
-Theme URI: http://cyberchimps.com/ifeaturepro
-Description: iFeature Pro: A Premium WordPress Theme designed by CyberChimps.com featuring customizable theme options, an aesthetically pleasing design with five color choices, a feature slider, callout section, dynamic header for custom logo, social icons, and contact section, widgetized sidebar and footer, typography including Google Fonts, and multiple template choices.
+Theme Name: DroidPress
+Theme URI: http://cyberchimps.com/droidpress/
+Description: DroidPress: A Premium WordPress Theme designed by CyberChimps.com featuring customizable theme options, an aesthetically pleasing design with five color choices, a feature slider, callout section, dynamic header for custom logo, social icons, and contact section, widgetized sidebar and footer, typography including Google Fonts, and multiple template choices.
 Author: CyberChimps
 Author URI: http://cyberchimps.com
-Version: 2.0.1
+Version: 1.0 alpha
 Tags: white, light, silver, two-columns, fixed-width, custom-header, custom-menu, threaded-comments, sticky-post
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -61,9 +61,16 @@ ul, ol { margin: 0 0 10px 0; }
 
 /* Header  */
 
-#header { height: 140px; }
+#header { }
 
-#headerwrap { height: 100px; }
+#headerwrap { 
+	height: 40px;
+	background-color: #3b5a7b;
+	border-bottom: 2px solid #fff;
+	border-left: 2px solid #fff;
+	border-right: 2px solid #fff;
+	margin-bottom: 10px;
+}
 
 #logo { 
 	height: 60px;
@@ -76,8 +83,6 @@ ul, ol { margin: 0 0 10px 0; }
 }
 
 #sitename {
-	margin-bottom: 28px;
-	margin-top: 8px;
 
 }
 
@@ -126,7 +131,7 @@ ul, ol { margin: 0 0 10px 0; }
 
 #social {
 	float: right;
-	padding-top: 30px;	
+	padding-top: 3px;	
 	height: 35px;
 	width: 335px;
 	text-align: right;
@@ -188,6 +193,7 @@ input[type=text] { width: 120px; }
 	width: 100%;
 	min-height: 330px;
 	margin: 5px 0 5px 0;
+	background-color: #fff;
 }
 
 #content_left {
@@ -771,6 +777,7 @@ li { padding-left: 5px; }
 	height:38px;
 	width: 980px;
 	display: block;
+	background-color: #3b5a7b;
 }
 
 #homebutton {
