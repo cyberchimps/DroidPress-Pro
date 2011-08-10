@@ -87,7 +87,7 @@ function add_sitetitle_color() {
 	global $themename, $themeslug, $options;
 
 	if (isset($options[$themeslug.'_sitetitle_color']) == "") {
-		$sitetitle = '717171';
+		$sitetitle = 'ffffff';
 	}
 	
 	else {
