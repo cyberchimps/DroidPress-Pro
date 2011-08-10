@@ -920,8 +920,8 @@ ul.sf-menu li li li.sfHover ul {
     background:         transparent;
 }
 
-.sf-menu li.current_page_item  {
-	background:        transparent;		
+.sf-menu li.current_page_item a {
+	background: #97c03d;		
 }
 
 .sf-menu li:hover, .sf-menu li.sfHover {
