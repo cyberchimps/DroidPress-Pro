@@ -32,8 +32,8 @@ body { font-size: 14px;	}
 	width: 980px;
 	background-color: white;
 	border: 3px solid #fff;
-	border-radius: 2px;
-	-moz-border-radius: 2px;
+	border-radius: 0px 0px 2px 2px;
+	-moz-border-radius: 0px 0px 2px 2px;
 }
 
 /* Fonts  */
@@ -154,10 +154,10 @@ ul, ol { margin: 0 0 10px 0; }
 
 .icons a img {
 	padding: 0 1px 0 1px;
-	opacity:.5;
+	opacity:1;
 }
 
-.icons a:hover img { opacity:1; }
+.icons a:hover img { opacity:.5; }
 
 
 /* Search Bar */
@@ -787,8 +787,13 @@ li { padding-left: 5px; }
 	width: 980px;
 	display: block;
 	background-color: #3b5a7b;
-	min-height: 45px;
-
+	height: 39px;
+	border-top: 3px solid #fff;
+	border-left: 3px solid #fff;
+	border-right: 3px solid #fff;
+	border-bottom: 1px solid #000;
+	border-radius: 2px 2px 0px 0px;
+	-moz-border-radius: 2px 2px 0px 0px;
 }
 
 #sfwrapper {
@@ -881,7 +886,7 @@ ul.sf-menu li li li.sfHover ul {
 .sf-menu {
     float:              left;
     width:              100%;
-    margin-top: 		5px;
+    margin-top: 		7px;
 }
 .sf-menu li {
     background:         transparent;
