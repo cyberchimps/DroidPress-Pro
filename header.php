@@ -170,7 +170,8 @@
 							</div>
 						<?php endif;?>
 				</div><!-- end headerwrap -->
+				<?php get_template_part('nav', 'header' ); ?>
 			</div><!-- end header -->
 
 			<div id="main">
-			<?php get_template_part('nav', 'header' ); ?>
+			

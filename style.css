@@ -124,7 +124,7 @@ ul, ol { margin: 0 0 10px 0; }
 	float: right;
 	margin-right: 5px;
 	width: 335px;
-	height: 100px;
+	
 }
 
 #sitename {
@@ -786,7 +786,7 @@ li { padding-left: 5px; }
 	display: block;
 	background-color: #3b5a7b;
 	height: 100px;
-	position: relative;
+
 }
 
 #sfwrapper {
