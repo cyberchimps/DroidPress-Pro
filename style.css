@@ -67,7 +67,9 @@ ul, ol { margin: 0 0 10px 0; }
 
 /* Header  */
 
-#header { }
+#header { 
+	min-height: 95px;
+}
 
 #headerwrap { 
 	width: 980px;
@@ -785,7 +787,7 @@ li { padding-left: 5px; }
 	width: 980px;
 	display: block;
 	background-color: #3b5a7b;
-	height: 100px;
+	min-height: 45px;
 
 }
 
@@ -825,7 +827,7 @@ li { padding-left: 5px; }
 .sf-menu li {
     float:          left;
     position:       relative;  
-    padding: 0px 5px 0px 5px;
+    padding: 0px 5px 5px 5px;
     background: transparent;
 }
 .sf-menu a { /* Nav link color */
