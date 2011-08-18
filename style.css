@@ -13,7 +13,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 /* Body  */
 
 * { margin: 0; padding: 0; }
-body { font-size: 14px;	}
+body { font-size: 14px;background-color: #303030;	}
 
 .screen-reader-text { position: absolute; left: -9999px; top: -9999px; }
 .clear { clear: both; }
@@ -74,7 +74,7 @@ ul, ol { margin: 0 0 10px 0; }
 #headerwrap { 
 	width: 980px;
 	height: 40px;
-	background-color: #3b5a7b;
+	background: #3b5a7b url(./images/droidman.png) no-repeat scroll left top;
 	border-bottom: 3px solid #fff;
 	border-left: 3px solid #fff;
 	border-right: 3px solid #fff;
@@ -157,7 +157,9 @@ ul, ol { margin: 0 0 10px 0; }
 	opacity:1;
 }
 
-.icons a:hover img { opacity:.5; }
+.icons a:hover img {
+	opacity:.5;
+}
 
 
 /* Search Bar */
@@ -428,7 +430,7 @@ label[for="comment"] {display: block;}
 }
 
 .sidebar-widget-title {
-	color: #666;
+	color: #000;
 	height: 30px;
 	padding: 0 3px 0 6px;
 	font-size: 20px;
@@ -913,10 +915,9 @@ ul.sf-menu li li li.sfHover ul {
     border: 1px solid #000;
 }
 
-
 .sf-menu ul li a {
-    background: 		transparent;
-    padding:            9px 1px;
+    background-color: 	#495f87;
+    padding:            8px 10px 10px 10px;   
     font-weight:        700;
     
 }
@@ -938,13 +939,13 @@ ul.sf-menu li li li.sfHover ul {
 
 /*** arrows **/
 .sf-menu a.sf-with-ul {
-    padding-right:  2.25em;
+    padding-right:  15px;
     min-width:      1px; /* trigger IE7 hasLayout so spans position accurately */
 }
 .sf-sub-indicator {
     position:       absolute;
     display:        block;
-    right:          0em;
+    right:          3px;
     top:            1.05em; /* IE6 only */
     width:          10px;
     height:         10px;
