@@ -40,5 +40,5 @@
 
 </div><!--end navcontainer-->
 
-</div>    
+</div>
 <!--end nav.php-->
