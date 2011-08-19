@@ -67,12 +67,6 @@
 	<?php if ($hideyoutube != '1' AND $youtube == '' ):?>
 		<a href="http://youtube.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/social/youtube.png" alt="YouTube" /></a>
 	<?php endif;?>
-	<?php if ($hidegooglemaps != '1' AND $googlemaps != ''):?>
-		<a href="<?php echo $googlemaps ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/social/googlemaps.png" alt="Google Maps" /></a>
-	<?php endif;?>
-	<?php if ($hidegooglemaps != '1' AND $googlemaps == ''):?>
-		<a href="http://google.com/maps" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/social/googlemaps.png" alt="Google Maps" /></a>
-	<?php endif;?>
 	<?php if ($hideemail != '1' AND $email != ''):?>
 		<a href="mailto:<?php echo $email ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/social/email.png" alt="E-mail" /></a>
 	<?php endif;?>
