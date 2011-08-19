@@ -21,7 +21,6 @@
 	$homedescription = $options[$themeslug.'_home_description'];
 	$logo = $options['file'] ;
 	$favicon = $options['file2'];
-	$headercontact = $options[$themeslug.'_header_contact'] ;
 	$title = get_post_meta($post->ID, 'seo_title' , true);
 	$pagedescription = get_post_meta($post->ID, 'seo_description' , true);
 	$keywords = get_post_meta($post->ID, 'seo_keywords' , true);
@@ -150,7 +149,7 @@
 	
 </head>
 
-<body style="font-family:'<?php echo $fontstrip ?>'" <?php body_class(); ?> >
+<body style="font-family:'<?php echo $fontstrip ?>', Arial, serif ;" <?php body_class(); ?> >
 	
 	<div id="page-wrap">
 		

@@ -1210,7 +1210,7 @@ a { text-decoration: none; color: black; }
 	color: #ffffff; 
 	cursor:default;
 	padding:2px; 
-	font-size:11px;   
+	font-size:13px;   
 	text-align:center;
 }
 
@@ -1220,7 +1220,7 @@ a { text-decoration: none; color: black; }
 
 .caption-bottom {
 	border-width:0px;
-	height: 40px;
+	height: 25px;
 }
 
 .caption a, .caption a {
