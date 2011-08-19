@@ -150,7 +150,7 @@ function add_tagline_color() {
 	global $themename, $themeslug, $options;
 
 	if (isset($options[$themeslug.'_tagline_color']) == "") {
-		$tagline = '000';
+		$tagline = 'fff';
 	}
 	
 	else { 
@@ -171,7 +171,7 @@ function add_posttitle_color() {
 	global $themename, $themeslug, $options;
 
 	if (isset($options[$themeslug.'_posttitle_color']) == "") {
-		$posttitle = '717171';
+		$posttitle = '000000';
 	}
 	else {
 		$posttitle = $options[$themeslug.'_posttitle_color']; 

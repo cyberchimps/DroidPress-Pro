@@ -13,7 +13,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 /* Body  */
 
 * { margin: 0; padding: 0; }
-body { font-size: 14px;	}
+body { font-size: 14px;background-color: #303030;	}
 
 .screen-reader-text { position: absolute; left: -9999px; top: -9999px; }
 .clear { clear: both; }
@@ -32,8 +32,8 @@ body { font-size: 14px;	}
 	width: 980px;
 	background-color: white;
 	border: 3px solid #fff;
-	border-radius: 2px;
-	-moz-border-radius: 2px;
+	border-radius: 0px 0px 2px 2px;
+	-moz-border-radius: 0px 0px 2px 2px;
 }
 
 /* Fonts  */
@@ -74,7 +74,7 @@ ul, ol { margin: 0 0 10px 0; }
 #headerwrap { 
 	width: 980px;
 	height: 40px;
-	background-color: #3b5a7b;
+	background: #3b5a7b url(./images/droidman.png) no-repeat scroll left top;
 	border-bottom: 3px solid #fff;
 	border-left: 3px solid #fff;
 	border-right: 3px solid #fff;
@@ -154,10 +154,12 @@ ul, ol { margin: 0 0 10px 0; }
 
 .icons a img {
 	padding: 0 1px 0 1px;
-	opacity:.5;
+	opacity:1;
 }
 
-.icons a:hover img { opacity:1; }
+.icons a:hover img {
+	opacity:.5;
+}
 
 
 /* Search Bar */
@@ -227,14 +229,12 @@ input[type=text] { width: 120px; }
 
 .post_container {
 	background-color: #fff;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	margin-bottom: 10px;
+	margin-bottom: 25px;
 	padding: 0 5px 5px 5px;
 }
 
 .post_container ul {	
-	list-style: disc;
+	list-style: square;
 	margin-left: 21px;
 	list-style-position: inside;
 }
@@ -247,21 +247,23 @@ ol {
 
 .content-background {
 	background-color: #fff;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
 	padding: 0 5px 5px 5px;
 }
 
 .archive-contentbg {
 	background-color: #fff;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
 	padding: 0 5px 5px 5px;
 }
 
 .posts_title {
-	font-size: 24px;
-	font-weight: bold;
+	font-size: 48px;
+	margin-bottom: 5px;
+}
+
+.posts_title a:hover {
+	background-color: #97c03d;
+	color: #fff;
+	margin-bottom: 5px;
 }
 
 .post { 
@@ -274,20 +276,17 @@ ol {
 }
 
 .meta { 
-	color: #ababab;
+	color: #565656;
 	font-size: 12px;
+	margin-bottom: 4px;
 }
 
 .postmetadata { 
 	color: #5c5c5c;
 	font-size: 12px;
-	background-color: #f8f8f8;
 	height: 18px;
 	margin: auto;
 	padding-left: 2px;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
 }
 
 .post-edit-link {
@@ -373,8 +372,7 @@ blockquote p { }
 /* Share and Comments Styling */
 
 .share {
-	padding-top: 1px;
-	float: left;
+	padding-top: 5px;
 }
 
 .share a img {
@@ -391,11 +389,6 @@ width: 440px;
 .gplusone {
 
 	margin-bottom: 6px;
-}
- 
-.comments {
-	float:right;
-	margin-right: 10px;
 }
 
 #comments .navigation { padding: 0 0 18px 0; }
@@ -428,7 +421,7 @@ label[for="comment"] {display: block;}
 }
 
 .sidebar-widget-title {
-	color: #666;
+	color: #000;
 	height: 30px;
 	padding: 0 3px 0 6px;
 	font-size: 20px;
@@ -694,7 +687,7 @@ li { padding-left: 5px; }
 
 #footer { 
 	min-height: 200px;
-	background: #222 url(./images/footerbg.png) repeat-x center top;
+	background-color: #666;
 
 }
 
@@ -738,7 +731,7 @@ li { padding-left: 5px; }
 
 #afterfooter {
 	width: 100%; 
-	background: black; 
+	background: #333; 
 	color: white;
 
 }
@@ -787,8 +780,13 @@ li { padding-left: 5px; }
 	width: 980px;
 	display: block;
 	background-color: #3b5a7b;
-	min-height: 45px;
-
+	height: 39px;
+	border-top: 3px solid #fff;
+	border-left: 3px solid #fff;
+	border-right: 3px solid #fff;
+	border-bottom: 1px solid #000;
+	border-radius: 2px 2px 0px 0px;
+	-moz-border-radius: 2px 2px 0px 0px;
 }
 
 #sfwrapper {
@@ -881,7 +879,7 @@ ul.sf-menu li li li.sfHover ul {
 .sf-menu {
     float:              left;
     width:              100%;
-    margin-top: 		5px;
+    margin-top: 		7px;
 }
 .sf-menu li {
     background:         transparent;
@@ -908,10 +906,9 @@ ul.sf-menu li li li.sfHover ul {
     border: 1px solid #000;
 }
 
-
 .sf-menu ul li a {
-    background: 		transparent;
-    padding:            9px 1px;
+    background-color: 	#495f87;
+    padding:            8px 10px 10px 10px;   
     font-weight:        700;
     
 }
@@ -933,13 +930,13 @@ ul.sf-menu li li li.sfHover ul {
 
 /*** arrows **/
 .sf-menu a.sf-with-ul {
-    padding-right:  2.25em;
+    padding-right:  15px;
     min-width:      1px; /* trigger IE7 hasLayout so spans position accurately */
 }
 .sf-sub-indicator {
     position:       absolute;
     display:        block;
-    right:          0em;
+    right:          3px;
     top:            1.05em; /* IE6 only */
     width:          10px;
     height:         10px;
