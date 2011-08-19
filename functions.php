@@ -285,6 +285,16 @@ function slide($atts, $content = null) {
 }
 add_shortcode('slide', 'slide');
 
+// Typekit
+
+function typekit_support() {
+
+	$embed = $options[$themeslug.'_typekit_code'];
+	
+	echo stripslashes($embed);
+
+}
+add_action('wp_head', 'typekit_support');
 
 // Nivo Slider 
 

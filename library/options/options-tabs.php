@@ -42,9 +42,9 @@ array( "name" => "Logo URL",
     "type" => "upload",  
     "std" => ""),  
 
-array( "name" => "Header Contact Area",  
-    "desc" => "Enter contact info such as phone number for the top right corner of the header. It can be HTML (to hide enter the word: hide).",  
-    "id" => $shortname."_header_contact",  
+array( "name" => "TypeKit Embed Code",  
+    "desc" => "If you wish to use TypeKit on your site, enter your TypeKit code here.",  
+    "id" => $shortname."_typekit_code",  
     "type" => "textarea",
     "std" => ""),
     
