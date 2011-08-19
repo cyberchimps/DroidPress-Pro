@@ -1,4 +1,4 @@
- <?php
+<?php
 
 /* Call globals. */	
 
@@ -22,10 +22,10 @@
 <div class="post_container">
 			
 	<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
+	
+		<?php get_template_part('meta', 'index' ); ?>
 
 		<h2 class="posts_title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-
-		<?php get_template_part('meta', 'index' ); ?>
 						
 			<?php
 				if ( has_post_thumbnail()) {
@@ -72,14 +72,8 @@
 
 				<div class="postmetadata">
 					<?php if ($share != '1'):?>
-						<?php get_template_part('share', 'index' ); ?>
+							<?php get_template_part('share', 'index' ); ?>
 					<?php endif;?>
-
-				<div class="comments">
-					<?php if ($comments != '1'):?>
-						<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
-					<?php endif;?>
-				</div><!--end comments-->	
 				</div><!--end postmetadata-->
 							
 	</div><!--end post_class-->

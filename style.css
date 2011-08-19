@@ -229,14 +229,12 @@ input[type=text] { width: 120px; }
 
 .post_container {
 	background-color: #fff;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	margin-bottom: 10px;
+	margin-bottom: 25px;
 	padding: 0 5px 5px 5px;
 }
 
 .post_container ul {	
-	list-style: disc;
+	list-style: square;
 	margin-left: 21px;
 	list-style-position: inside;
 }
@@ -249,21 +247,23 @@ ol {
 
 .content-background {
 	background-color: #fff;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
 	padding: 0 5px 5px 5px;
 }
 
 .archive-contentbg {
 	background-color: #fff;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
 	padding: 0 5px 5px 5px;
 }
 
 .posts_title {
-	font-size: 24px;
-	font-weight: bold;
+	font-size: 48px;
+	margin-bottom: 5px;
+}
+
+.posts_title a:hover {
+	background-color: #97c03d;
+	color: #fff;
+	margin-bottom: 5px;
 }
 
 .post { 
@@ -276,20 +276,17 @@ ol {
 }
 
 .meta { 
-	color: #ababab;
+	color: #565656;
 	font-size: 12px;
+	margin-bottom: 4px;
 }
 
 .postmetadata { 
 	color: #5c5c5c;
 	font-size: 12px;
-	background-color: #f8f8f8;
 	height: 18px;
 	margin: auto;
 	padding-left: 2px;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
 }
 
 .post-edit-link {
@@ -375,8 +372,7 @@ blockquote p { }
 /* Share and Comments Styling */
 
 .share {
-	padding-top: 1px;
-	float: left;
+	padding-top: 5px;
 }
 
 .share a img {
@@ -393,11 +389,6 @@ width: 440px;
 .gplusone {
 
 	margin-bottom: 6px;
-}
- 
-.comments {
-	float:right;
-	margin-right: 10px;
 }
 
 #comments .navigation { padding: 0 0 18px 0; }
@@ -696,7 +687,7 @@ li { padding-left: 5px; }
 
 #footer { 
 	min-height: 200px;
-	background: #222 url(./images/footerbg.png) repeat-x center top;
+	background-color: #666;
 
 }
 
@@ -740,7 +731,7 @@ li { padding-left: 5px; }
 
 #afterfooter {
 	width: 100%; 
-	background: black; 
+	background: #333; 
 	color: white;
 
 }
