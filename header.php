@@ -25,7 +25,7 @@
 	$title = get_post_meta($post->ID, 'seo_title' , true);
 	$pagedescription = get_post_meta($post->ID, 'seo_description' , true);
 	$keywords = get_post_meta($post->ID, 'seo_keywords' , true);
-	$typekit = $options[$themeslug.'_typekit_code'];
+
 
 
 /* End variable definition. */	
@@ -141,7 +141,6 @@
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-<?php echo stripslashes($typekit); ?>
 
 <link href='http://fonts.googleapis.com/css?family=<?php echo $font ?>' rel='stylesheet' type='text/css' />
 	

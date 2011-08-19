@@ -288,7 +288,8 @@ add_shortcode('slide', 'slide');
 // Typekit
 
 function typekit_support() {
-
+	global $themename, $themeslug, $options;
+	
 	$embed = $options[$themeslug.'_typekit_code'];
 	
 	echo stripslashes($embed);
