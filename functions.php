@@ -232,11 +232,11 @@ function create_post_type() {
 
 	global $themename, $themeslug, $options;
 	
-	register_post_type( $themeslug.'_custom_slides',
+	register_post_type( 'dp_featured_posts',
 		array(
 			'labels' => array(
-				'name' => __( 'Custom Slides' ),
-				'singular_name' => __( 'Slides' )
+				'name' => __( 'Featured Posts' ),
+				'singular_name' => __( 'Posts' )
 			),
 			'public' => true,
 			'show_ui' => true, 
@@ -248,59 +248,6 @@ function create_post_type() {
 	);
 }
 
-// Register custom category taxonomy for Slider
-
-function custom_taxonomies() {
-
-	global $themename, $themeslug, $options;
-	
-	register_taxonomy(
-		'slide_categories',		
-		$themeslug.'_custom_slides',		
-		array(
-			'hierarchical' => true,
-			'label' => 'Slide Categories',	
-			'query_var' => true,	
-			'rewrite' => array( 'slug' => 'slide_categories' ),	
-		)
-	);
-}
-
-add_action('init', 'custom_taxonomies', 0);
-
-// Define default category for custom category taxonomy
-
-function custom_taxonomy_default( $post_id, $post ) {
-
-	global $themename, $themeslug, $options;	
-
-	if( 'publish' === $post->post_status ) {
-
-		$defaults = array(
-
-			'slide_categories' => array( 'default' ),
-
-			);
-
-		$taxonomies = get_object_taxonomies( $post->post_type );
-
-		foreach( (array) $taxonomies as $taxonomy ) {
-
-			$terms = wp_get_post_terms( $post_id, $taxonomy );
-
-			if( empty( $terms ) && array_key_exists( $taxonomy, $defaults ) ) {
-
-				wp_set_object_terms( $post_id, $defaults[$taxonomy], $taxonomy );
-
-			}
-
-		}
-
-	}
-
-}
-
-add_action( 'save_post', 'custom_taxonomy_default', 100, 2 );
 
 //Download Button Shortcode
 	
@@ -353,6 +300,22 @@ function nivoslider(){
 	echo $script;
 }
 add_action('wp_head', 'nivoslider');
+
+// Carousel Javascript
+
+function carousel(){
+	 
+	$path =  get_template_directory_uri() ."/library/js/";
+
+	$script = "
+		
+		<script type=\"text/javascript\" src=\"".$path."/captify.tiny.js\"></script>
+		<script type=\"text/javascript\" src=\"".$path."/jcarousellite_1.0.1.pack.js\"></script>
+		";
+	
+	echo $script;
+}
+add_action('wp_head', 'carousel');
 
 // + 1 Button 
 

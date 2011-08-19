@@ -26,18 +26,22 @@
 	$size = get_post_meta($post->ID, 'page_slider_size' , true);
 	$hidetitle = get_post_meta($post->ID, 'hide_page_title' , true);
 	$sidebar = get_post_meta($post->ID, 'page_sidebar' , true);
-
+	$root = get_template_directory_uri(); 
+	
 ?>
 
 <?php get_header(); ?>
 
+	<div id = "wrap">
+			<div id ="list">
+				<div class="prev"><img src="<?php echo $root ;?>/images/prev.jpg" alt="prev" /></div>
+			<?php get_template_part('carousel', 'index' ); ?>
+				<div class="next"><img src="<?php echo $root ;?>/images/next.jpg" alt="next" /></div>
+			</div>
+		</div>
+
 <div id="content_wrap">
 		
-	<?php if ($options[$themeslug.'_hide_slider_blog'] != '1' && $blogslidersize == "full"): ?>
-		<div id = "slider-wrapper">
-			<?php get_template_part('sliderblog', 'index' ); ?>
-		</div>
-	<?php endif;?>
 		
 	<?php if ($sidebar == "4" OR $blogsidebar == 'none'): ?>
 		<div id="content_fullwidth">
@@ -61,11 +65,9 @@
 		<div class="content_half">
 	<?php endif;?>
 	
-	<?php if ($options[$themeslug.'_hide_slider_blog'] != '1' && $blogslidersize != "full"): ?>
-		<div id = "slider-wrapper">
-			<?php get_template_part('sliderblog', 'page' ); ?>
-		</div>
-	<?php endif;?>
+	
+	
+	
 
 		<div class="content_padding">
 		

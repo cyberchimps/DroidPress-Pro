@@ -687,50 +687,38 @@ function initialize_the_meta_boxes() {
 
 	$meta_boxes[] = array(
 		'id' => 'slides',
-		'title' => 'Custom Feature Slides',
-		'pages' => array($themeslug.'_custom_slides'),
+		'title' => 'Featured Post Carousel',
+		'pages' => array('dp_featured_posts'),
 
 		'tabs' => array(
 			array(
 				'fields' => array(
 
+				
 					array(
-						'name' => 'Custom Slide Link',
+						'name' => 'Featured Post Title',
 						'desc' => 'Enter your link here',
-						'id' => $prefix . 'url',
+						'id' => 'post_title',
 						'type' => 'text',
 						'std' => ''
 					),
+					
 					array(
-						'name' => 'Custom Slide Image',
+						'name' => 'Featured Post Image',
 						'desc' => 'Upload your image here:',
-						'id' => $prefix . 'image',
+						'id' => 'post_image',
 						'type' => 'image',
 						'std' => ''
 					),
-					array(
-						'name' => 'Hide Title Bar',
-						'desc' => 'Click to disable the title bar on this post:',
-						'id' => $prefix . 'hidetitle',
-						'type' => 'checkbox',
+					
+						array(
+						'name' => 'Featured Post Link',
+						'desc' => 'Enter your link here',
+						'id' => 'post_url',
+						'type' => 'text',
 						'std' => ''
 					),
-
-					array(
-						'name' => 'Custom Thumbnail',
-						'desc' => 'Use the image uploader to upload a custom navigation thumbnail',
-						'id' => $prefix . 'custom_thumb',
-						'type' => 'image'
-					),
-					
-					array(
-						'name' => 'Need help?',
-						'desc' => '',
-						'id' => '',
-						'type' => 'sliderhelp',
-						'std' => ''
-			),
-					
+										
 					array(
 						'name' => 'Want to re-order your slides?',
 						'desc' => '',
@@ -742,31 +730,6 @@ function initialize_the_meta_boxes() {
 			)
 		)
 	);
-
-	$terms = get_terms('slide_categories', 'hide_empty=0');
-
-	$slideroptions = array();
-
-	foreach($terms as $term) {
-
-		$slideroptions[$term->slug] = $term->name;
-
-	}
-
-	
-	$terms2 = get_terms('category', 'hide_empty=0');
-
-	$blogoptions = array();
-	
-	$blogoptions['all'] = "All";
-
-	foreach($terms2 as $term) {
-
-		$blogoptions[$term->slug] = $term->name;
-
-	}
-
-	
 
 	$meta_boxes[] = array(
 		'id' => 'pages',
