@@ -12,6 +12,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 /* Body  */
 
+p {line-height: 1.5em;}
+
 * { margin: 0; padding: 0; }
 body { font-size: 14px;background-color: #303030;	}
 
@@ -45,7 +47,7 @@ h1 {
 
 h2 { 
 	font-size: 16px;
-	font-weight: bold;
+	font-weight: 400;
 }
 
 h3 { 
@@ -825,7 +827,7 @@ li { padding-left: 5px; }
 .sf-menu li {
     float:          left;
     position:       relative;  
-    padding: 0px 5px 5px 5px;
+    padding: 0px 5px 0px 5px;
     background: transparent;
 }
 .sf-menu a { /* Nav link color */
@@ -840,7 +842,7 @@ li { padding-left: 5px; }
 }
 .sf-menu li:hover ul,
 .sf-menu li.sfHover ul {
-    left:           0;
+    left:           0.1em;
     top:            2.5em; /* match top ul list item height */
     z-index:        1001;
 }
@@ -850,16 +852,16 @@ ul.sf-menu li.sfHover li ul {
 }
 
 .sf-menu li li {
-	height: 35px;
+	height: 32px;
 }
 
 .sf-menu li li:hover {
-	height: 35px;
+	height: 32px;
 }
 
 ul.sf-menu li li:hover ul,
 ul.sf-menu li li.sfHover ul {
-    left:           15.5em; /* match ul width */
+    left:           14.0em; /* match ul width */
     top:            0;
 }
 ul.sf-menu li li:hover li ul,

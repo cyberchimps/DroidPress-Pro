@@ -32,7 +32,7 @@
 /* Establish fonts. */	
 
 	if ($options[$themeslug.'_font'] == "" AND $options[$themeslug.'_custom_font'] == "") {
-		$font = '';
+		$font = 'Helvetica+Neue';
 	}
 			
 	elseif ($options[$themeslug.'_custom_font'] != "") {
