@@ -12,7 +12,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 /* Body  */
 
-p {line-height: 1.5em;}
+p {line-height: 1.6em;}
 
 * { margin: 0; padding: 0; }
 body { font-size: 14px;background-color: #303030;	}
@@ -280,7 +280,7 @@ ol {
 
 .meta { 
 	color: #3B5A7B;
-	font-size: 12px;
+	font-size: 14px;
 	margin-bottom: 4px;
 	margin-left: 28px;
 }
@@ -368,13 +368,17 @@ blockquote p { }
 
 .meta-category a {
 	background-color: #97C03D;
-	line-height: 12px;
+	line-height: 14px;
 	display: inline-block;
 	color: white;
 	float: left;	
 	padding: 3px; 
 	margin-right:4px;
 	margin-top: -2px;
+}
+
+.meta-rest {
+	float: left;
 }
 
 .sticky { }
@@ -503,7 +507,7 @@ width: 440px;
 #comments .navigation { padding: 0 0 18px 0; }
  
 .tags {
-	font-size: 10px;
+	font-size: 11px;
 	padding-bottom: 2px;
 	margin-left: 28px;
 }
