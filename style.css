@@ -258,8 +258,9 @@ ol {
 }
 
 .posts_title {
-	font-size: 48px;
+	font-size: 38px;
 	margin-bottom: 5px;
+	padding-left: 28px;
 }
 
 .posts_title a:hover {
@@ -274,13 +275,17 @@ ol {
 
 .entry {
 	padding-top: 5px;
-
+	margin-left: 28px;
 }
 
 .meta { 
-	color: #565656;
+	color: #3B5A7B;
 	font-size: 12px;
 	margin-bottom: 4px;
+	margin-left: 28px;
+}
+.meta a {
+	color: #3B5A7B;
 }
 
 .postmetadata { 
@@ -288,6 +293,7 @@ ol {
 	font-size: 12px;
 	height: 18px;
 	margin: auto;
+	margin-left: 28px;
 	padding-left: 2px;
 }
 
@@ -298,6 +304,12 @@ ol {
 	font-size: 10px;
 	border-radius: 3px;
 	-moz-border-radius: 3px;
+	margin-left: 28px;
+}
+
+.comments {
+	text-align: right;
+	margin-top: -20px;
 }
 
 img.alignright {float:right; margin:0 0 1em 1em}
@@ -347,12 +359,23 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 }
 
 blockquote { 
-	background-color: #ccc;
+	background-color: #97C03D;
 	margin: 10px;
-	padding: 3px;
+	padding: 5px;
 }
 
 blockquote p { }
+
+.meta-category a {
+	background-color: #97C03D;
+	line-height: 12px;
+	display: inline-block;
+	color: white;
+	float: left;	
+	padding: 3px; 
+	margin-right:4px;
+	margin-top: -2px;
+}
 
 .sticky { }
 
@@ -368,6 +391,90 @@ blockquote p { }
 	margin-top: 8px; 
 	margin-right: 12px; 
 	margin-bottom: 10px; 
+	
+
+}
+
+/* Post Format Styling */
+
+.format-default-image {
+	float: left;
+	margin-left: -40px;
+	margin-right: 5px;
+	margin-top: -8px;
+}
+
+.format-aside {
+
+}
+
+.format-aside-image {
+	float: left;
+	margin-left: -40px;
+	margin-right: 5px;
+	margin-top: -8px;
+}
+
+.format-link {
+
+}
+
+.format-link .entry a {
+	color: #3B5A7B;
+	font-size: larger;
+}
+
+.format-link-image {
+	float: left;
+	margin-left: -40px;
+	margin-right: 5px;
+	margin-top: -8px;
+}
+
+.format-gallery {
+
+}
+
+.format-gallery-image {
+	float: left;
+	margin-left: -40px;
+	margin-right: 5px;
+	margin-top: -8px;
+}
+
+.gallery-thumb {
+	text-align: center;
+	
+}
+
+.format-chat {
+
+}
+
+.format-audio {
+
+}
+
+.format-audio-image {
+	float: left;
+	margin-left: -40px;
+	margin-right: 5px;
+	margin-top: -8px;
+}
+
+.format-video {
+
+}
+
+.format-quote {
+
+}
+
+.format-status {
+
+}
+
+.format-image {
 
 }
 
@@ -398,6 +505,7 @@ width: 440px;
 .tags {
 	font-size: 10px;
 	padding-bottom: 2px;
+	margin-left: 28px;
 }
 
 label[for="comment"] {display: block;}
@@ -426,8 +534,8 @@ label[for="comment"] {display: block;}
 	color: #000;
 	height: 30px;
 	padding: 0 3px 0 6px;
-	font-size: 20px;
-	font-weight: bold;
+	font-size: 22px;
+	font-weight: 500;
 }
 
 .sidebar-widget-style {

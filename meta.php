@@ -24,5 +24,5 @@
 
 
 <div class="meta">
-	<?php if ($category != '1'):?><?php the_category(', ') ?> | <?php endif;?><?php if ($date != '1'):?> <a href="<?php the_permalink() ?>"><?php the_time('F jS, Y') ?></a><?php endif;?> | <?php if ($author != '1'):?> <?php the_author_posts_link(); ?> <?php endif;?> | <?php if ($comments != '1'):?> <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?><?php endif;?>	
+	<div class="meta-category"><?php if ($category != '1'):?><?php the_category(' ') ?></div> | <?php endif;?><?php if ($date != '1'):?> <a href="<?php the_permalink() ?>"><?php the_time('F jS, Y') ?></a><?php endif;?> | <?php if ($author != '1'):?> <?php the_author_posts_link(); ?> <?php endif;?> | <?php if ($comments != '1'):?> <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?><?php endif;?>	
 </div>
