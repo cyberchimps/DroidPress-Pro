@@ -1113,7 +1113,8 @@ li.sfHover > a > .sf-sub-indicator {
 }
 .commentlist {
 	list-style: none;
-	margin-left: 100px;
+	margin-left: 66px;
+	margin-top: 10px;
 	width: 85.9%;
 }
 .content .commentlist,
@@ -1183,7 +1184,7 @@ li.sfHover > a > .sf-sub-indicator {
 	-webkit-box-shadow: 0 1px 2px #ccc;
 	-moz-box-shadow: 0 1px 2px #ccc;
 	box-shadow: 0 1px 2px #ccc;
-	left: -102px;
+	left: -66px;
 	padding: 0;
 	position: absolute;
 	top: 0;
@@ -1269,10 +1270,12 @@ a.comment-reply-link > span {
 	border: 1px solid #d3d3d3;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	margin: 0 auto 1.625em;
 	padding: 1.625em;
 	position: relative;
-	width: 68.9%;
+		margin-left: 20px;
+	margin-top: 10px;
+	width: 85.9%
+	
 }
 #respond input[type="text"],
 #respond textarea {
@@ -1549,6 +1552,232 @@ a { text-decoration: none; color: black; }
 
 .button_link:hover{ text-decoration:none !important; }
 
+/* The Nivo Slider styles */
+
+.nivoSlider {
+	position:relative;
+}
+
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+/* If an image is wrapped in a link */
+
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+
+/* The slices and boxes in the Slider */
+
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+}
+
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	opacity:0.7; /* Overridden by captionOpacity setting */
+	width:100%;
+	z-index:8;
+	text-align: left;
+	
+}
+
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+	
+}
+
+.nivo-caption a {
+	display:inline !important;
+}
+
+
+/* Direction nav styles (e.g. Next & Prev) */
+
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+
+.nivo-prevNav {
+	left:0px;
+}
+
+.nivo-nextNav {
+	right:0px;
+}
+
+
+
+/*============================*/
+/*=== Custom Slider Styles ===*/
+/*============================*/
+
+
+#slider-wrapper {
+
+    margin: auto;
+    margin-bottom: 50px;
+    -moz-box-shadow:0 0 5px #AAAAAA;
+    -webkit-box-shadow:0 0 5px #AAAAAA;
+    box-shadow:0 0 5px #AAAAAA;
+    border: 1px solid white;
+}
+
+.nivo-controlNav {
+	position:absolute;
+	bottom:-40px; /* Put the nav below the slider */
+
+	
+
+	
+/* Slider Thumbnail Nav Style */
+	
+.nivo-controlNav a {
+	
+	z-index:9;
+	width:50px;
+	height:30px;
+	text-indent:-9999px;
+	border:0;
+	margin-right:3px;
+	float:left;
+	display: block;
+}
+
+
+}
+#slider .nivo-controlNav img {
+	display:inline; /* Unhide the thumbnails */
+	position:relative;
+	margin-right:10px;
+}
+
+/* End slider thumbs */
+
+#slider {
+	position:relative;
+    margin:auto;
+	background:url(images/slider/loading.gif) no-repeat 50% 50%;
+}
+
+#slider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+
+#slider a {
+	border:0;
+	display:inline;
+}
+
+#slider a.active img {
+	border: 1px solid black;
+}
+
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(images/slider/arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+}
+a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+
+a.nivo-prevNav {
+	left:15px;
+}
+
+.nivo-html-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	opacity:0.7; /* Overridden by captionOpacity setting */
+	width:100%;
+	z-index:8;
+	display:none;
+}
+
+.nivo-html-caption-right {
+	position:relative;
+	float:right;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	opacity:0.7; /* Overridden by captionOpacity setting */
+	width:250px;
+	height: 330px;
+	z-index:8;
+}
+
+.nivo-html-caption-left {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	opacity:0.7; /* Overridden by captionOpacity setting */
+	width:250px;
+	height: 330px;
+	z-index:8;
+}
+
+
+#customcaption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	opacity:0.8; /* Overridden by captionOpacity setting */
+	width:100%;
+	z-index:8;
+}
+
+.nivo-caption p {
+	padding:5px;
+	margin:0; 
+}
 
 
 /************************************************
