@@ -730,6 +730,30 @@ function initialize_the_meta_boxes() {
 			)
 		)
 	);
+	
+		$terms = get_terms('slide_categories', 'hide_empty=0');
+
+	$slideroptions = array();
+
+	foreach($terms as $term) {
+
+		$slideroptions[$term->slug] = $term->name;
+
+	}
+
+	
+	$terms2 = get_terms('category', 'hide_empty=0');
+
+	$blogoptions = array();
+	
+	$blogoptions['all'] = "All";
+
+	foreach($terms2 as $term) {
+
+		$blogoptions[$term->slug] = $term->name;
+
+	}
+
 
 	$meta_boxes[] = array(
 		'id' => 'pages',

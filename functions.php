@@ -246,8 +246,77 @@ function create_post_type() {
 			'rewrite' => array('slug' => 'slides')
 		)
 	);
+	
+	register_post_type( $themeslug.'_custom_slides',
+		array(
+			'labels' => array(
+				'name' => __( 'Custom Slides' ),
+				'singular_name' => __( 'Slides' )
+			),
+			'public' => true,
+			'show_ui' => true, 
+			'supports' => array('title', 'editor','custom-fields'),
+			'taxonomies' => array( 'slide_categories'),
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'slides')
+		)
+	);
+
 }
 
+// Register custom category taxonomy for Slider
+
+function custom_taxonomies() {
+
+	global $themename, $themeslug, $options;
+	
+	register_taxonomy(
+		'slide_categories',		
+		$themeslug.'_custom_slides',		
+		array(
+			'hierarchical' => true,
+			'label' => 'Slide Categories',	
+			'query_var' => true,	
+			'rewrite' => array( 'slug' => 'slide_categories' ),	
+		)
+	);
+}
+
+add_action('init', 'custom_taxonomies', 0);
+
+// Define default category for custom category taxonomy
+
+function custom_taxonomy_default( $post_id, $post ) {
+
+	global $themename, $themeslug, $options;	
+
+	if( 'publish' === $post->post_status ) {
+
+		$defaults = array(
+
+			'slide_categories' => array( 'default' ),
+
+			);
+
+		$taxonomies = get_object_taxonomies( $post->post_type );
+
+		foreach( (array) $taxonomies as $taxonomy ) {
+
+			$terms = wp_get_post_terms( $post_id, $taxonomy );
+
+			if( empty( $terms ) && array_key_exists( $taxonomy, $defaults ) ) {
+
+				wp_set_object_terms( $post_id, $defaults[$taxonomy], $taxonomy );
+
+			}
+
+		}
+
+	}
+
+}
+
+add_action( 'save_post', 'custom_taxonomy_default', 100, 2 );
 
 //Download Button Shortcode
 	
