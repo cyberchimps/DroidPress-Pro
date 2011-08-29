@@ -18,7 +18,7 @@ get_header(); ?>
 
 		<?php if (have_posts()) : ?>
 
-		<h2><font size="5"><?php printf( __( 'Search Results For: %s' ), '<span>' . get_search_query() . '</span>' ); ?></font></h2><br />
+		<div class="archive-title"><?php printf( __( 'Search Results For: %s' ), '<span>' . get_search_query() . '</span>' ); ?></div><br />
 
 		<?php while (have_posts()) : the_post(); ?>
 		
@@ -26,7 +26,7 @@ get_header(); ?>
 
 			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 
-				<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+				<h2 class="archive_posts_title" id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 				<?php get_template_part('meta', 'search' ); ?>
 
 				<div class="entry">
@@ -44,7 +44,7 @@ get_header(); ?>
 
 	<?php else : ?>
 
-		<h2>No posts found.</h2>
+		<h2 style="margin-left: 28px;"><font size="5">No posts found.</font></h2>
 
 	<?php endif; ?>
 		</div><!--end content_padding-->

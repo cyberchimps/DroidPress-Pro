@@ -331,12 +331,33 @@ ol {
 	margin-top: -20px;
 }
 
-img.alignright {float:right; margin:0 0 1em 1em}
-img.alignleft {float:left; margin:0 1em 1em 0}
-img.aligncenter {display: block; margin-left: auto; margin-right: auto}
-a img.alignright {float:right; margin:0 0 1em 1em}
-a img.alignleft {float:left; margin:0 1em 1em 0}
-a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+img.size-full {
+	max-width: 600px;
+}
+
+
+.alignleft,
+img.alignleft {
+	display: inline;
+	float: left;
+  margin-right: 1.5em;
+}
+.alignright,
+img.alignright {
+	display: inline;
+	float: right;
+  margin-left: 1.5em;
+}
+.aligncenter,
+img.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+p {
+     clear: both;
+}
 
 .aligncenter, div.aligncenter {
 	display: block;
