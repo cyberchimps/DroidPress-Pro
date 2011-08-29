@@ -55,6 +55,18 @@ h3 {
 	font-weight: bold;
 }
 
+.archive-title {
+	font-size: 32px;
+	margin-left: 33px;
+}
+
+.archive_posts_title a {
+	font-size: 32px;
+	margin-left: 27px;
+	margin-bottom: 10px;
+	color: #000;
+}
+
 .error { font-size: 28px; text-align: center; }
 
 p { margin: 0 0 10px 0; }
@@ -65,7 +77,10 @@ a:hover { color: #555; }
 
 a img {border: none; }
 
-ul, ol { margin: 0 0 10px 0; }
+ul, ol { 
+	margin: 0 0 10px 0; 
+	padding-left: 2px;	
+}
 
 /* Header  */
 
