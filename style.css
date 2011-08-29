@@ -475,6 +475,10 @@ blockquote p { }
 	font-size: larger;
 }
 
+.format-link .entry a:hover {
+	color: #97C03D;
+}
+
 .format-link-image {
 	float: left;
 	margin-left: -40px;

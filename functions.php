@@ -11,9 +11,9 @@
 
 /* Define global variables. */	
 
-	$themename = 'ifeature';
-	$themenamefull = 'iFeature';
-	$themeslug = 'if';
+	$themename = 'droidpress';
+	$themenamefull = 'DroidPress';
+	$themeslug = 'dp';
 	$options = get_option($themename);
 
 /* End global variables. */	
