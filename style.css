@@ -297,6 +297,10 @@ ol {
 	color:  #3B5A7B;
 }
 
+.entry a:hover {
+	color: #97C03D;
+}
+
 .meta { 
 	color: #3B5A7B;
 	font-size: 14px;
@@ -307,6 +311,9 @@ ol {
 	color: #3B5A7B;
 }
 
+.meta a:hover {
+	color: #97C03D
+}
 .postmetadata { 
 	color: #5c5c5c;
 	font-size: 12px;
@@ -591,6 +598,10 @@ label[for="comment"] {display: block;}
 
 .sidebar-widget-style a {
 	color:  #3B5A7B;
+}
+
+.sidebar-widget-style a:hover {
+	color:  #97C03D;
 }
 
 .sidebar-widget-style li {
@@ -999,7 +1010,7 @@ li { padding-left: 5px; }
 .sf-menu li:hover ul,
 .sf-menu li.sfHover ul {
     left:           0.1em;
-    top:            2.5em; /* match top ul list item height */
+    top:            2.4em; /* match top ul list item height */
     z-index:        1001;
 }
 ul.sf-menu li:hover li ul,

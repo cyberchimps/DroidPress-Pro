@@ -66,9 +66,7 @@ get_header(); ?>
 
 							<div class="postmetadata">
 									<?php get_template_part ('share', 'single' ); ?>
-								<div class="comments">
-									<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
-								</div><!--end comments-->	
+								
 							</div><!--end postmetadata-->
 							
 					</div><!--end post_class-->
