@@ -293,6 +293,10 @@ ol {
 	margin-left: 28px;
 }
 
+.entry a {
+	color:  #3B5A7B;
+}
+
 .meta { 
 	color: #3B5A7B;
 	font-size: 14px;
@@ -562,6 +566,10 @@ label[for="comment"] {display: block;}
 	padding: 5px;
 	margin-bottom: 10px;
 	list-style-type: none;
+}
+
+.sidebar-widget-style a {
+	color:  #3B5A7B;
 }
 
 .sidebar-widget-style li {
@@ -1281,7 +1289,7 @@ a.comment-reply-link > span {
 
 /* Comment Form */
 #respond {
-	background: #ddd;
+	background: #97C03D;
 	border: 1px solid #d3d3d3;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
