@@ -876,7 +876,8 @@ li { padding-left: 5px; }
 #footer { 
 	min-height: 200px;
 	background-color: #3B5A7B;
-
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
 }
 
 #footer_wrap {
