@@ -13,6 +13,10 @@ function theme_options_validate( $input ) {
 
 	/* Assign checkbox value */
 
+	if ( ! isset( $input[$themeslug.'_hide_post_icons'] ) )
+		$input[$themeslug.'_hide_post_icons'] = null;
+	$input[$themeslug.'_hide_post_icons'] = ( $input[$themeslug.'_hide_post_icons'] == 1 ? 1 : 0 );
+	
 	if ( ! isset( $input[$themeslug.'_hide_facebook'] ) )
 		$input[$themeslug.'_hide_facebook'] = null;
 	$input[$themeslug.'_hide_facebook'] = ( $input[$themeslug.'_hide_facebook'] == 1 ? 1 : 0 ); 

@@ -997,7 +997,7 @@ li { padding-left: 5px; }
 .sf-menu li:hover ul,
 .sf-menu li.sfHover ul {
     left:           0.1em;
-    top:            2.4em; /* match top ul list item height */
+    top:            2.3em; /* match top ul list item height */
     z-index:        1001;
 }
 ul.sf-menu li:hover li ul,

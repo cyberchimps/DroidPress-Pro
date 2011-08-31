@@ -192,6 +192,12 @@ array( "name" => "Select the Sidebar Type",
     "id" => $shortname."_blog_sidebar",  
 	"type" => "select8",  
     "std" => "false"),
+    
+array( "name" => "Hide Post Icons",  
+    "desc" => "Check this box to hide the post format icons.",  
+    "id" => $shortname."_hide_post_icons",  
+      "type" => "checkbox",  
+    "std" => "false"),
 
 array( "name" => "Post Excerpts",  
     "desc" => "Use the following options to control excerpts.",  

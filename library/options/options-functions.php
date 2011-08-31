@@ -8,6 +8,23 @@
 	
 */
 
+/* Hide Post Icons */
+
+function hide_post_icons() {
+
+	global $themename, $themeslug, $options;
+	
+	if ($options[$themeslug.'_hide_post_icons'] == "1") {
+
+		echo '<style type="text/css">';
+		echo ".format-image {display: none;}";
+		echo '</style>';
+		
+	}
+	
+}
+add_action( 'wp_head', 'hide_post_icons');
+
 /* Plus 1 Allignment */
 
 function plusone_alignment() {
