@@ -247,7 +247,7 @@ input[type=text] { width: 120px; }
 .post_container {
 	background-color: #fff;
 	margin-bottom: 25px;
-	padding: 0 1f5px 5px 25px;
+	padding: 0 15px 5px 25px;
 }
 
 .post_container ul {	
