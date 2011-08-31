@@ -247,7 +247,7 @@ input[type=text] { width: 120px; }
 .post_container {
 	background-color: #fff;
 	margin-bottom: 25px;
-	padding: 0 5px 5px 15px;
+	padding: 0 1f5px 5px 25px;
 }
 
 .post_container ul {	
@@ -275,6 +275,12 @@ ol {
 .posts_title {
 	font-size: 38px;
 	margin-bottom: 8px;
+}
+
+.posts_title a{
+	font-size: 38px;
+	margin-bottom: 8px;
+	margin-left: -2px;
 }
 
 .posts_title a:hover {
@@ -454,9 +460,8 @@ blockquote p { }
 
 .format-image {
 	float: left;
-	margin-left: -50px;
-	margin-right: 5px;
-	margin-top: -7px;
+	margin-left: -55px;
+	margin-top: -3px;
 }
 
 .format-aside {
@@ -1308,7 +1313,7 @@ a.comment-reply-link > span {
 
 /* Comment Form */
 #respond {
-	background: #dfdfdf;
+	background: #ccc;
 	border: 1px solid #d3d3d3;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -1404,8 +1409,8 @@ a.comment-reply-link > span {
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
 }
 #respond input#submit:active {
-	background: #1982d1;
-	color: #bfddf3;
+	background: #97C03D;
+	color: #fff;
 }
 #respond #cancel-comment-reply-link {
 	color: #666;
