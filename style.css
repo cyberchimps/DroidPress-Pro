@@ -1,11 +1,11 @@
 /*   
 Theme Name: DroidPress
 Theme URI: http://cyberchimps.com/droidpress/
-Description: DroidPress: A Premium WordPress Theme designed by CyberChimps.com featuring customizable theme options, an aesthetically pleasing design with five color choices, a feature slider, callout section, dynamic header for custom logo, social icons, and contact section, widgetized sidebar and footer, typography including Google Fonts, and multiple template choices.
+Description: A premium WordPress theme designed by CyberChimps.com inspired by the popular Android mobile phone operating system by Google. DroidPress features customizable theme options on a per-page basis, a feature posts section, post format support, feature slider, callout section, dynamic header for custom logo, social icons, widgetized sidebar and footer, and typography support including Typekit and Google Fonts.
 Author: CyberChimps
-Author URI: http://cyberchimps.com
-Version: 1.0 alpha
-Tags: white, light, silver, two-columns, fixed-width, custom-header, custom-menu, threaded-comments, sticky-post
+Author URI: http://cyberchimps.com/droidpress/
+Version: 1.0 beta
+Tags: green, blue, dark, two-columns, fixed-width, custom-header, custom-menu, threaded-comments, sticky-post
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -247,7 +247,7 @@ input[type=text] { width: 120px; }
 .post_container {
 	background-color: #fff;
 	margin-bottom: 25px;
-	padding: 0 5px 5px 5px;
+	padding: 0 5px 5px 15px;
 }
 
 .post_container ul {	
@@ -275,7 +275,6 @@ ol {
 .posts_title {
 	font-size: 38px;
 	margin-bottom: 8px;
-	padding-left: 28px;
 }
 
 .posts_title a:hover {
@@ -290,7 +289,6 @@ ol {
 
 .entry {
 	padding-top: 5px;
-	margin-left: 28px;
 }
 
 .entry a {
@@ -305,7 +303,6 @@ ol {
 	color: #000;
 	font-size: 14px;
 	margin-bottom: 4px;
-	margin-left: 28px;
 }
 .meta a {
 	color: #3B5A7B;
@@ -319,7 +316,6 @@ ol {
 	font-size: 12px;
 	height: 18px;
 	margin: auto;
-	margin-left: 28px;
 	padding-left: 2px;
 }
 
@@ -330,7 +326,6 @@ ol {
 	font-size: 10px;
 	border-radius: 3px;
 	-moz-border-radius: 3px;
-	margin-left: 28px;
 }
 
 .comments {
@@ -452,29 +447,20 @@ blockquote p { }
 .featured-image {
 	margin-top: 8px; 
 	margin-right: 12px; 
-	margin-bottom: 10px; 
-	
-
+	margin-bottom: 10px;
 }
 
 /* Post Format Styling */
 
-.format-default-image {
+.format-image {
 	float: left;
-	margin-left: -40px;
+	margin-left: -50px;
 	margin-right: 5px;
-	margin-top: -8px;
+	margin-top: -7px;
 }
 
 .format-aside {
 
-}
-
-.format-aside-image {
-	float: left;
-	margin-left: -40px;
-	margin-right: 5px;
-	margin-top: -8px;
 }
 
 .format-link {
@@ -490,27 +476,12 @@ blockquote p { }
 	color: #97C03D;
 }
 
-.format-link-image {
-	float: left;
-	margin-left: -40px;
-	margin-right: 5px;
-	margin-top: -8px;
-}
-
 .format-gallery {
 
 }
 
-.format-gallery-image {
-	float: left;
-	margin-left: -40px;
-	margin-right: 5px;
-	margin-top: -8px;
-}
-
 .gallery-thumb {
 	text-align: center;
-	
 }
 
 .format-chat {
@@ -519,13 +490,6 @@ blockquote p { }
 
 .format-audio {
 
-}
-
-.format-audio-image {
-	float: left;
-	margin-left: -40px;
-	margin-right: 5px;
-	margin-top: -8px;
 }
 
 .format-video {
@@ -571,7 +535,6 @@ width: 440px;
 .tags {
 	font-size: 11px;
 	padding-bottom: 2px;
-	margin-left: 28px;
 }
 
 .tags a:hover {
@@ -592,7 +555,6 @@ label[for="comment"] {display: block;}
 	width: 300px;
 	margin-top: 0px;
 	margin-bottom: 10px;
-	padding: 2px;
 }
 
 .textwidget {
@@ -611,7 +573,6 @@ label[for="comment"] {display: block;}
 
 .sidebar-widget-style {
 	color: #222;
-	padding: 5px;
 	margin-bottom: 10px;
 	list-style-type: none;
 }
@@ -1347,13 +1308,13 @@ a.comment-reply-link > span {
 
 /* Comment Form */
 #respond {
-	background: #D1ECB8;
+	background: #dfdfdf;
 	border: 1px solid #d3d3d3;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	padding: 1.625em;
 	position: relative;
-		margin-left: 20px;
+	margin-left: 20px;
 	margin-top: 10px;
 	width: 85.9%
 	
