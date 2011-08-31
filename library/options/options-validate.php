@@ -21,9 +21,9 @@ function theme_options_validate( $input ) {
 		$input[$themeslug.'_hide_facebook'] = null;
 	$input[$themeslug.'_hide_facebook'] = ( $input[$themeslug.'_hide_facebook'] == 1 ? 1 : 0 ); 
 	
-	if ( ! isset( $input['if_hide_twitter'] ) )
-		$input['if_hide_twitter'] = null;
-	$input['if_hide_twitter'] = ( $input['if_hide_twitter'] == 1 ? 1 : 0 ); 
+	if ( ! isset( $input[$themeslug.'_hide_twitter'] ) )
+		$input[$themeslug.'_hide_twitter'] = null;
+	$input[$themeslug.'_hide_twitter'] = ( $input[$themeslug.'_hide_twitter'] == 1 ? 1 : 0 ); 
 	
 	if ( ! isset( $input[$themeslug.'_hide_gplus'] ) )
 		$input[$themeslug.'_hide_gplus'] = null;

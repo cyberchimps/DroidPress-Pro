@@ -23,7 +23,7 @@
 			
 	<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 
-		<h2 class="posts_title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+			<div class ="format-image"><img src="<?php echo $root ;?>/images/formats/video.png" height="50px" width="50px" /></div><h2 class="posts_title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 
 		<?php get_template_part('meta', 'index' ); ?>
 						
