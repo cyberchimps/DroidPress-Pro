@@ -96,7 +96,7 @@ function theme_options_do_page() {
 } 
   if( isset( $_REQUEST['reset'] )) { 
             global $wpdb;
-            $query = "DELETE FROM $wpdb->options WHERE option_name LIKE 'ifeature'";
+            $query = "DELETE FROM $wpdb->options WHERE option_name LIKE 'droidpress'";
             $wpdb->query($query);
             
             die;
