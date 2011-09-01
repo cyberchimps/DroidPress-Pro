@@ -107,7 +107,7 @@ function theme_options_do_page() {
 <div class="wrap">
 
 <br />
-<img src="<?php echo get_template_directory_uri() ;?>/images/options/ifeaturepro.png" />
+<div class="titletext">DroidPress Pro</div>
 <br />
 <br />
 
@@ -126,12 +126,12 @@ function theme_options_do_page() {
 	
 	<div class="menu">
 	<ul>
-		<li><a href="http://cyberchimps.com/support" target="_blank">Support</a></li>
-		<li><a href="http://cyberchimps.com/ifeaturepro/docs/">Documentation</a></li>
+		<li><a href="http://cyberchimps.com/store/" target="_blank">CyberChimps Store</a></li>
+		<li><a href="http://cyberchimps.com/support/" target="_blank">Support</a></li>
+		<li><a href="http://cyberchimps.com/ifeaturepro/docs/">Docs</a></li>
 		<li><a href="http://cyberchimps.com/forum/" target="_blank">Forum</a></li>
 		<li><a href="http://twitter.com/#!/cyberchimps" target="_blank">Twitter</a></li>
 		<li><a href="http://www.facebook.com/CyberChimps" target="_blank">Facebook</a></li>
-		<li><a href="http://cyberchimps.com/store/" target="_blank">CyberChimps Store</a></li>
 	</ul>
 	</div>
 
