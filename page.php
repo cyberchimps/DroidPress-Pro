@@ -20,7 +20,6 @@
 	$size = get_post_meta($post->ID, 'page_slider_size' , true);
 	$hidetitle = get_post_meta($post->ID, 'hide_page_title' , true);
 	$sidebar = get_post_meta($post->ID, 'page_sidebar' , true);
-	$callout = get_post_meta($post->ID, 'enable_callout_section' , true);
 	$twitterbar = get_post_meta($post->ID, 'enable_twitter_bar' , true);
 	$enableboxes = get_post_meta($post->ID, 'enable_box_section' , true);
 	$pagecontent = get_post_meta($post->ID, 'hide_page_content' , true);
@@ -39,8 +38,6 @@ if ($sidebar == "1" OR $sidebar == "2") {
 
 ?>
 
-
-
 <div id="content_wrap">
 
 	<?php if ($enable == "on" && $size == "0"): ?>
@@ -48,12 +45,6 @@ if ($sidebar == "1" OR $sidebar == "2") {
 			<center><?php get_template_part('nivoslider', 'page' ); ?> </center>
 		</div>
 
-	<?php endif;?>
-	
-	<?php if ($callout == "on"): ?>
-	
-			<?php include (TEMPLATEPATH . '/pro/callout.php' ); ?> 
-			
 	<?php endif;?>
 	
 	<?php if ($twitterbar == "on"): ?>
