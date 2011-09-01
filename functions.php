@@ -18,6 +18,12 @@
 
 /* End global variables. */	
 
+// Add support for post formats.
+	add_theme_support(
+		'post-formats',
+		array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat')
+	);
+
 /* Begin custom excerpt functions. */	
 
 function new_excerpt_more($more) {
