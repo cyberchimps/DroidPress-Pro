@@ -236,6 +236,7 @@ input[type=text] { width: 120px; }
 #content_left {
 	float: left;
 	width: 660px;
+	margin-top: -5px;
 }
 
 #content_fullwidth { width: 100%; }
@@ -1833,7 +1834,7 @@ a.nivo-prevNav {
 #list {
 	height:130px;
 	width:900px; 
-	margin:30px auto; 
+	margin:15px auto; 
 }
 
 .slider {
