@@ -16,7 +16,8 @@
 
 /* Define Variables. */	
 
-	$hideslider = $options[$themeslug.'_hide_slider_blog'];
+	$showslider = $options[$themeslug.'_show_slider_blog'];
+	$hidefeatured = $options[$themeslug.'_hide_featured_posts'];
 	$blogsidebar = $options[$themeslug.'_blog_sidebar'];
 	$blogslidersize = $options[$themeslug.'_slider_size'];
 	$title = get_post_meta($post->ID, 'seo_title' , true);
@@ -32,6 +33,8 @@
 
 <?php get_header(); ?>
 
+	<?php if ($hidefeatured != "1"): ?>
+
 	<div id = "wrap">
 			<div id ="list">
 				<div class="prev"><img src="<?php echo $root ;?>/images/prev.jpg" alt="prev" /></div>
@@ -39,9 +42,14 @@
 				<div class="next"><img src="<?php echo $root ;?>/images/next.jpg" alt="next" /></div>
 			</div>
 		</div>
-
+	<?php endif;?>
 <div id="content_wrap">
 		
+	<?php if ($options[$themeslug.'_show_slider_blog'] == '1' && $blogslidersize == "full"): ?>
+		<div id = "slider-wrapper">
+			<?php get_template_part('sliderblog', 'index' ); ?>
+		</div>
+	<?php endif;?>
 		
 	<?php if ($sidebar == "4" OR $blogsidebar == 'none'): ?>
 		<div id="content_fullwidth">
@@ -66,7 +74,11 @@
 	<?php endif;?>
 	
 	
-	
+	<?php if ($options[$themeslug.'_show_slider_blog'] == '1' && $blogslidersize != "full"): ?>
+		<div id = "slider-wrapper">
+			<?php get_template_part('sliderblog', 'page' ); ?>
+		</div>
+	<?php endif;?>
 	
 
 		<div class="content_padding">

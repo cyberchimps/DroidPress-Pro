@@ -17,6 +17,10 @@ function theme_options_validate( $input ) {
 		$input[$themeslug.'_hide_post_icons'] = null;
 	$input[$themeslug.'_hide_post_icons'] = ( $input[$themeslug.'_hide_post_icons'] == 1 ? 1 : 0 );
 	
+	if ( ! isset( $input[$themeslug.'_hide_featured_posts'] ) )
+		$input[$themeslug.'_hide_featured_posts'] = null;
+	$input[$themeslug.'_hide_featured_posts'] = ( $input[$themeslug.'_hide_featured_posts'] == 1 ? 1 : 0 );
+	
 	if ( ! isset( $input[$themeslug.'_hide_facebook'] ) )
 		$input[$themeslug.'_hide_facebook'] = null;
 	$input[$themeslug.'_hide_facebook'] = ( $input[$themeslug.'_hide_facebook'] == 1 ? 1 : 0 ); 
@@ -57,9 +61,9 @@ function theme_options_validate( $input ) {
 		$input[$themeslug.'_show_fb_like'] = null;
 	$input[$themeslug.'_show_fb_like'] = ( $input[$themeslug.'_show_fb_like'] == 1 ? 1 : 0 ); 
   
-    if ( ! isset( $input[$themeslug.'_hide_slider'] ) )
-		$input[$themeslug.'_hide_slider'] = null;
-	$input[$themeslug.'_hide_slider'] = ( $input[$themeslug.'_hide_slider'] == 1 ? 1 : 0 ); 
+    if ( ! isset( $input[$themeslug.'_show_slider'] ) )
+		$input[$themeslug.'_show_slider'] = null;
+	$input[$themeslug.'_show_slider'] = ( $input[$themeslug.'_show_slider'] == 1 ? 1 : 0 ); 
   
     if ( ! isset( $input[$themeslug.'_hide_boxes'] ) )
 		$input[$themeslug.'_hide_boxes'] = null;
@@ -117,9 +121,9 @@ function theme_options_validate( $input ) {
 		$input[$themeslug.'_enable_custom_calloutbg'] = null;
 	$input[$themeslug.'_enable_custom_calloutbg'] = ( $input[$themeslug.'_enable_custom_calloutbg'] == 1 ? 1 : 0 );   
   
-	if ( ! isset( $input[$themeslug.'_hide_slider_blog'] ) )
-		$input[$themeslug.'_hide_slider_blog'] = null;
-	$input[$themeslug.'_hide_slider_blog'] = ( $input[$themeslug.'_hide_slider_blog'] == 1 ? 1 : 0 ); 
+	if ( ! isset( $input[$themeslug.'_show_slider_blog'] ) )
+		$input[$themeslug.'_show_slider_blog'] = null;
+	$input[$themeslug.'_show_slider_blog'] = ( $input[$themeslug.'_show_slider_blog'] == 1 ? 1 : 0 ); 
 	
 	if ( ! isset( $input[$themeslug.'_widget_title_bg'] ) )
 		$input[$themeslug.'_widget_title_bg'] = null;

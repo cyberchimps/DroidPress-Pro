@@ -282,7 +282,7 @@
 	    	}
 
 	   		elseif ($timdisable != '1') {
-	       		$image = "$root/library/wt/wordthumb.php?src=$root/images/pro/droidprosliderbig&a=c&h=$height&w=980";
+	       		$image = "$root/library/wt/wordthumb.php?src=$root/images/pro/droidprosliderbig.jpg&a=c&h=$height&w=980";
 	       		$thumbnail = "$root/images/pro/droidthumbthumb.jpg";
 	       	}
 	       	
