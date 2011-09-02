@@ -8,11 +8,11 @@
 		<div class="sidebar-widget-style">    
 		<h2 class="sidebar-widget-title">Sidebar Right</h2>
     	<ul>
-						<li>Thank you for purchasing iFeature Pro.</li>
+						<li>Thank you for purchasing DroidPress Pro.</li>
 						<li>&nbsp;</li>
-						<li>To remove this Widget login to your admin account, go to Appearance, then Widgets and drag new widgets into Sidebar Right.</li>
+						<li>To remove this Widget login to your admin account, go to Appearance, then Widgets and drag new widgets into Sidebar Left.</li>
 						<li>&nbsp;</li>
-						<li>We designed iFeature Pro to be as user friendly as possible, if you do run into trouble we provide a <a href="http://cyberchimps.com/forum">free support forum</a>, and <a href="http://www.cyberchimps.com/ifeature-pro/docs/">precise documentation</a>.</li>
+						<li>We designed DroidPress Pro to be as user friendly as possible, if you do run into trouble we provide a <a href="http://cyberchimps.com/forum">free support forum</a>, and <a href="http://www.cyberchimps.com/droidpresspro/docs/">precise documentation</a>.</li>
 						<li>&nbsp;</li>
 						<li>If we were all designers then every WordPress theme would look this good.</li>
 					</ul>
