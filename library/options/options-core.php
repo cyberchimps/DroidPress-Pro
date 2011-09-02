@@ -151,8 +151,8 @@ function theme_options_do_page() {
     
     <div class="tabContainer">
 		
-			<?php settings_fields( 'if_options' ); ?>
-			<?php $options = get_option( 'ifeature' ); ?>
+			<?php settings_fields( 'dp_options' ); ?>
+			<?php $options = get_option( 'droidpress' ); ?>
 
 			<table class="form-table">   
 

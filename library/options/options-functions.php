@@ -147,7 +147,7 @@ function add_link_color() {
 	global $themename, $themeslug, $options;
 
 	if (isset($options[$themeslug.'_link_color']) == "") {
-		$link = '717171';
+		$link = '3B5A7B';
 	}
 
 	else { 
@@ -155,7 +155,10 @@ function add_link_color() {
 	}				
 	
 		echo '<style type="text/css">';
-		echo "a {color: #$link;}";
+		echo ".entry a {color: #$link;}";
+		echo ".meta-rest a {color: #$link;}";
+		echo ".sidebar-widget-style a {color: #$link;}";
+		echo ".format-link .entry a {color: #$link;}";
 		echo '</style>';
 		
 }
@@ -208,7 +211,7 @@ function add_footer_color() {
 
 	global $themename, $themeslug, $options;
 
-	if (isset($options[$themeslug.'_footer_color']) != "" && $options[$themeslug.'_footer_color'] != "222222" ) {
+	if (isset($options[$themeslug.'_footer_color']) != "" && $options[$themeslug.'_footer_color'] != "3B5A7B" ) {
 	
 		$footercolor = $options[$themeslug.'_footer_color']; 
 	

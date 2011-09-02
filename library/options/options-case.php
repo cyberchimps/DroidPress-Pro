@@ -524,7 +524,7 @@ case 'color2':
 <?php
 
 	if (isset($options[$themeslug.'_link_color']) == "") {
-		$picker = '717171';
+		$picker = '3B5A7B';
 	}
 			
 	else {
@@ -628,7 +628,7 @@ case 'color8':
 <?php
 
 	if (isset($options[$themeslug.'_footer_color']) == "") {
-		$picker = '222';
+		$picker = '#3B5A7B';
 	}		
 	else {
 		$picker = $options[$themeslug.'_footer_color']; 
