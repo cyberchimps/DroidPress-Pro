@@ -153,11 +153,13 @@ ul, ol {
 .sitename {
 	color: #fff;
 	font-size: 32px;
-	font-weight: bolder;
+	font-weight: 500;
 	-moz-text-shadow:0 0 3px #000;
     -webkit-text-shadow:0 0 3px #000;
     text-shadow:0 0 3px #000;
 }
+
+.sitename a {color: #fff;}
 
 /* Social Icons  */
 
