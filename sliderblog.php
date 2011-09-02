@@ -313,7 +313,7 @@
 	      	$out .= "	<br /><br /><br /><br />
 	    				<font size='6'>Oops! You have not created a Custom Slide.</font> <br /><br />
 
-To learn how to create a custom slide please <a href='http://cyberchimps.com/question/using-the-ifeature-slider/' target='_blank'><font color='blue'>read the documentation</font></a>.<br /><br />
+To learn how to create a custom slide please <a href='http://cyberchimps.com/question/using-the-droidpress-pro-slider/' target='_blank'><font color='blue'>read the documentation</font></a>.<br /><br />
 
 To create a Custom Slide please go to the Custom Slides tab in WP-Admin. Once you have created your first Custom Slide it will display here instead of this warning.<br /><br />
 
