@@ -686,6 +686,39 @@ case 'color9':
 
 <?php
 break; 
+
+case 'color11':
+?>
+
+<tr>
+<td width="15%" rowspan="2" valign="middle"><strong><?php echo $value['name']; ?></strong><br /><small><?php echo $value['desc']; ?></small></td>
+<td width="85%">
+
+<?php
+
+	if (isset($options[$themeslug.'_custom_menu_color']) == "") {
+			$picker = '3B5A7B';
+	}		
+	
+	else {
+		$picker = $options[$themeslug.'_custom_menu_color']; 
+	}
+	
+?>
+
+<input type="text" class="color" id="<?php echo $themename ;?>[<?php echo $themeslug ;?>_custom_menu_color]" name="<?php echo $themename ;?>[<?php echo $themeslug ;?>_custom_menu_color]"  value="<?php echo $picker ;?>" style="width: 300px;" maxlength="6"> 
+
+</td>
+</tr> 
+ 
+<tr>
+
+</tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #ddd;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
+
+
+<?php
+break;
+
  
 case 'facebook':  
 ?>  
@@ -1050,32 +1083,11 @@ Define a custom Featured Image size below (default is 100 by 100):
 <?php
 break;
 
-case 'select1':
+case 'color11':
 ?>
 <tr>
 <td width="15%" rowspan="2" valign="middle"><strong><?php echo $value['name']; ?></strong><br /><small><?php echo $value['desc']; ?></small></td>
 <td width="85%"><select style="width:300px;" name="<?php echo $themename.'['.$value['id'].']'; ?>">
-
-<?php
-								$selected = $options[$value['id']];
-								$p = '';
-								$r = '';
-
-								foreach ( $select_menu_color as $option ) {
-									$label = $option['label'];
-									if ( $selected == $option['value'] ) // Make default first in list
-										$p = "\n\t<option style=\"padding-right: 10px;\" selected='selected' value='" . esc_attr( $option['value'] ) . "'>$label</option>";
-									else
-										$r .= "\n\t<option style=\"padding-right: 10px;\" value='" . esc_attr( $option['value'] ) . "'>$label</option>";      
-								}
-								echo $p . $r;   
-							?>    
-
-</select><br /></br>
-
-Or, select "color picker" from the drop down menu and choose your own custom menu color below:
-
-<br /><br />
 
 <?php
 

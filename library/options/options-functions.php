@@ -96,7 +96,6 @@ function post_meta_data_width() {
 add_action( 'wp_head', 'post_meta_data_width');
 
 
-
 /* Site Title Color */
 
 function add_sitetitle_color() {
@@ -117,6 +116,29 @@ function add_sitetitle_color() {
 		
 }
 add_action( 'wp_head', 'add_sitetitle_color');
+
+/* Link Color */
+
+function add_menu_color() {
+
+	global $themename, $themeslug, $options;
+
+	if ($options[$themeslug.'_custom_menu_color'] == "") {
+		$color = '3B5A7B';
+	}
+
+	else { 
+		$color = $options[$themeslug.'_custom_menu_color']; 
+	}				
+	
+		echo '<style type="text/css">';
+		echo "#navbackground {background-color: #$color;}";
+		echo '</style>';
+		
+}
+add_action( 'wp_head', 'add_menu_color');
+
+
 
 /* Link Color */
 
@@ -159,27 +181,6 @@ function add_menulink_color() {
 		echo '</style>';
 }
 add_action( 'wp_head', 'add_menulink_color');
-
-/* Tagline Color */
-
-function add_tagline_color() {
-
-	global $themename, $themeslug, $options;
-
-	if (isset($options[$themeslug.'_tagline_color']) == "") {
-		$tagline = 'fff';
-	}
-	
-	else { 
-		$tagline = $options[$themeslug.'_tagline_color']; 
-	}		
-		
-		echo '<style type="text/css">';
-		echo "#description {color: #$tagline;}";
-		echo '</style>';
-
-}
-add_action( 'wp_head', 'add_tagline_color');
 
 /* Post Title Color */
 
@@ -245,25 +246,6 @@ function add_menu_font() {
 		echo '</style>';
 }
 add_action( 'wp_head', 'add_menu_font');
-
-/* Widget title background */
- 
-function widget_title_bg() {
-
-	global $themename, $themeslug, $options;
-	$root = get_template_directory_uri();
-	
-	if ($options[$themeslug.'_widget_title_bg'] == "1") {
-		
-		echo '<style type="text/css">';
-		echo ".box-widget-title {background: url($root/images/wtitlebg.png) no-repeat center top; margin: -6px -5px 5px -5px;}";
-		echo ".sidebar-widget-title {background: url($root/images/wtitlebg.png) no-repeat center top; margin: -6px -5px 5px -5px;}";
-		echo '</style>';
-
-	}
-}
-add_action( 'wp_head', 'widget_title_bg');
-
 
 /* Custom CSS */
 
