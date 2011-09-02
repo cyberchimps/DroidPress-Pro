@@ -260,12 +260,17 @@ class RW_Meta_Box {
 	
 	function show_field_pagehelp($field, $meta) {
 		$this->show_field_begin($field, $meta);
-		echo "Visit our iFeature Pro 2 Page Options help page here: <a href='http://cyberchimps.com/question/using-the-ifeature-pro-page-meta-options/' target='_blank'>Page Options Documentation</a></td>";
+		echo "Visit our DroidPress Pro Page Options help page here: <a href='http://cyberchimps.com/question/using-the-droidpress-pro-page-meta-options/' target='_blank'>Page Options Documentation</a></td>";
 	}
 		
 	function show_field_sliderhelp($field, $meta) {
 		$this->show_field_begin($field, $meta);
-		echo "Visit our iFeature Pro Slider help page here: <a href='http://cyberchimps.com/question/using-the-ifeature-pro-2-slider' target='_blank'>Page Options Documentation</a></td>";
+		echo "Visit our DroidPress Pro Slider help page here: <a href='http://cyberchimps.com/question/using-the-droidpress-pro-slider/' target='_blank'>Page Options Documentation</a></td>";
+	}
+	
+	function show_field_featuredhelp($field, $meta) {
+		$this->show_field_begin($field, $meta);
+		echo "Visit our DroidPress Pro Featured Posts Section help page here: <a href='http://cyberchimps.com/question/using-the-droidpress-pro-featured-posts-section/' target='_blank'>Featured Posts Section Documentation</a></td>";
 	}
 	
 	function show_field_reorder($field, $meta) {
@@ -697,7 +702,7 @@ function initialize_the_meta_boxes() {
 				
 					array(
 						'name' => 'Featured Post Title',
-						'desc' => 'Enter your link here',
+						'desc' => 'Enter your title here',
 						'id' => 'post_title',
 						'type' => 'text',
 						'std' => ''
@@ -718,6 +723,15 @@ function initialize_the_meta_boxes() {
 						'type' => 'text',
 						'std' => ''
 					),
+					
+					array(
+						'name' => 'Need help?',
+						'desc' => '',
+						'id' => '',
+						'type' => 'featuredhelp',
+						'std' => ''
+			),
+
 										
 					array(
 						'name' => 'Want to re-order your slides?',

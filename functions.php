@@ -246,8 +246,7 @@ function create_post_type() {
 			),
 			'public' => true,
 			'show_ui' => true, 
-			'supports' => array('title', 'editor','custom-fields'),
-			'taxonomies' => array( 'slide_categories'),
+			'supports' => array('custom-fields'),
 			'has_archive' => true,
 			'rewrite' => array('slug' => 'slides')
 		)
