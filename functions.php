@@ -15,6 +15,7 @@
 	$themenamefull = 'DroidPress';
 	$themeslug = 'dp';
 	$options = get_option($themename);
+	$root = get_template_directory_uri(); 
 
 /* End global variables. */	
 
@@ -236,7 +237,7 @@ add_action( 'init', 'create_post_type' );
 
 function create_post_type() {
 
-	global $themename, $themeslug, $options;
+	global $themename, $themeslug, $options, $root;
 	
 	register_post_type( 'dp_featured_posts',
 		array(
@@ -248,6 +249,7 @@ function create_post_type() {
 			'show_ui' => true, 
 			'supports' => array('custom-fields'),
 			'has_archive' => true,
+			'menu_icon' => "$root/images/pro/favicon.ico",
 			'rewrite' => array('slug' => 'slides')
 		)
 	);
@@ -255,12 +257,13 @@ function create_post_type() {
 	register_post_type( $themeslug.'_custom_slides',
 		array(
 			'labels' => array(
-				'name' => __( 'Custom Slides' ),
+				'name' => __( 'Feature Slides' ),
 				'singular_name' => __( 'Slides' )
 			),
 			'public' => true,
 			'show_ui' => true, 
 			'supports' => array('title', 'editor','custom-fields'),
+			'menu_icon' => "$root/images/pro/favicon.ico",
 			'taxonomies' => array( 'slide_categories'),
 			'has_archive' => true,
 			'rewrite' => array('slug' => 'slides')
