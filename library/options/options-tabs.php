@@ -36,7 +36,7 @@ array( "name" => "Help",
     "std" => ""),
     
 array( "name" => "Typekit Embed Code",  
-    "desc" => "If you wish to use TypeKit on your site, enter your TypeKit code here.",  
+    "desc" => "If you wish to use Typekit on your site, enter your TypeKit code here.",  
     "id" => $shortname."_typekit_code",  
     "type" => "textarea",
     "std" => ""),
