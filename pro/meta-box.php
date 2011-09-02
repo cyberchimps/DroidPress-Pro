@@ -842,13 +842,6 @@ function initialize_the_meta_boxes() {
 				'std' => ''
 			  ),
 			
-			array(
-				'name' => 'Enable Callout Section',
-				'desc' => 'Check this box to enable the Callout Section on this page',
-				'id' => 'enable_callout_section',
-				'type' => 'checkbox',
-				'std' => ''
-			),
 			
 			array(
 				'name' => 'Enable Twitter Bar',

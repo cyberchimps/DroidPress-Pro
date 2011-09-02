@@ -115,10 +115,12 @@ if ($sidebar == "1" OR $sidebar == "2") {
 			<?php endwhile; endif; ?>
 			</div><!--end post_container-->
 				<?php endif;?>
+				
+		<?php if ($enableboxes != 'on' && $pagecontent != "on" ):?>		
 		</div><!--end content_padding-->
 		
 	</div><!--end content_left-->
-	
+		<?php endif;?>
 	<?php if ($sidebar == "0" && $pagecontent != "on"  OR $sidebar == ""): ?>
 	<?php get_sidebar(); ?>
 	<?php endif;?>
