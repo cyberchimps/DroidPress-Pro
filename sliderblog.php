@@ -257,7 +257,7 @@
 	    	}
 	    	
 	    	elseif ($customimage == '' && $timdisable == '1'){
-	    		$image = "$root/images/pro/ifeatureprolarge.jpg";
+	    		$image = "$root/images/pro/droidprosliderbig.jpg";
 	    		$thumbnail = $customthumb;
 	    	}
 	    	
@@ -267,23 +267,23 @@
 	    	}
 
 	    	elseif ($customimage == '' && $size2 == "0" && $size != "0" && $timdisable != '1'){
-	    		$image = "$root/library/wt/wordthumb.php?src=$root/images/pro/iFeaturePro2-640.jpg&a=c&h=$height&w=640";
-	    		$thumbnail = "$root/images/pro/iFeaturePro2thumb.jpg";
+	    		$image = "$root/library/wt/wordthumb.php?src=$root/images/pro/droidproslidersmall.jpg&a=c&h=$height&w=640";
+	    		$thumbnail = "$root/images/pro/droidthumb.jpg";
 	    	}
 
 	    	elseif ($customimage == '' && $size2 == '4' && $size != "0" && $timdisable != '1'){
-	    		$image = "$root/library/wt/wordthumb.php?src=$root/images/pro/iFeaturePro2-640.jpg&a=c&h=$height&w=640";
+	    		$image = "$root/library/wt/wordthumb.php?src=$root/images/pro/droidproslidersmall.jpg&a=c&h=$height&w=640";
 	    		$thumbnail = "$root/images/pro/iFeaturePro2thumb.jpg";
 	    	}
 
 	    	elseif ($customimage == '' && $size2 == "1" && $size != "0" && $timdisable != '1' OR $customimage == '' && $size2 == "2" && $size != "0" && $timdisable != '1'){
-	    		$image = "$root/library/wt/wordthumb.php?src=$root/images/pro/iFeaturePro2-480.jpg&a=c&h=$height&w=480";
+	    		$image = "$root/library/wt/wordthumb.php?src=$root/images/pro/droidproslidersmall.jpg&a=c&h=$height&w=480";
 	    		$thumbnail = "$root/images/pro/iFeaturePro2thumb.jpg";
 	    	}
 
 	   		elseif ($timdisable != '1') {
-	       		$image = "$root/library/wt/wordthumb.php?src=$root/images/pro/ifeatureprolarge.jpg&a=c&h=$height&w=980";
-	       		$thumbnail = "$root/images/pro/iFeaturePro2thumb.jpg";
+	       		$image = "$root/library/wt/wordthumb.php?src=$root/images/pro/droidprosliderbig&a=c&h=$height&w=980";
+	       		$thumbnail = "$root/images/pro/droidthumbthumb.jpg";
 	       	}
 	       	
 	      
