@@ -35,13 +35,6 @@ array( "name" => "Help",
     "type" => "general_faq",  
     "std" => ""),
     
-    
-array( "name" => "Logo URL",  
-    "desc" => "Use the image uploader or enter your own URL into the input field to use an image as your logo. To display the site title as text, leave blank.",  
-    "id" => $shortname."_logo",  
-    "type" => "upload",  
-    "std" => ""),  
-
 array( "name" => "TypeKit Embed Code",  
     "desc" => "If you wish to use TypeKit on your site, enter your TypeKit code here.",  
     "id" => $shortname."_typekit_code",  
