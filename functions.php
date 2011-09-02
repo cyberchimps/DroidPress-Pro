@@ -522,6 +522,15 @@ add_action( 'wp_head', 'add_scripts',0);
 	'before_title' => '<h3 class="footer-widget-title">',
 	'after_title' => '</h3>',
 	));
+	
+function droidpress_admin_link() {
+
+	global $wp_admin_bar;
+
+	$wp_admin_bar->add_menu( array( 'id' => 'DroidPress Pro', 'title' => 'DroidPress Pro Settings', 'href' => admin_url('themes.php?page=theme_options')  ) ); 
+  
+}
+add_action( 'admin_bar_menu', 'droidpress_admin_link', 113 );
     
 
 	//iFeature theme options file

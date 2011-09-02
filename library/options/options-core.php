@@ -52,7 +52,7 @@ function enqueue_scripts() {
     wp_enqueue_style($themeslug.'css');  
 }
 
-$name = "iFeature Pro";
+$name = "DroidPress Pro";
 $template_url = get_template_directory_uri();
 
 
