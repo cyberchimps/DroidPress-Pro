@@ -18,6 +18,7 @@
     $tmp_query = $wp_query; 
 	$root = get_template_directory_uri(); 
 	$timdisable = get_post_meta($post->ID, 'disable_wordthumb' , true);
+	$default = "$root/images/pro/droidlogo.jpg";
 	
 /* End define variables. */	
 
@@ -73,7 +74,36 @@
 
 	      	$i++;
 	      	endwhile;
-	      	$out .= "</ul></div>";	      
+	      	$out .= "</ul></div>";	 
+	      	
+	      	else:
+	      
+	      	$out .= "	<div class='slider'>
+	    <ul>
+	      			<li>
+	      				
+	    				<img src='$default' alt='Post 1' class='captify'/>
+	    				
+	    			</li>
+					<li>
+	    				<img src='$default' alt='Post 2' class='captify'/>
+	    			</li>
+					<li>
+	    				<img src='$default' alt='Post 3' class='captify'/>
+	    			</li>
+					<li>
+	    				<img src='$default' alt='Post 4' class='captify'/>
+	    			</li>
+					<li>
+	    				<img src='$default' alt='Post 5' class='captify'/>
+	    			</li>
+
+	      				
+	    			</ul>
+	    				</div>		
+	    				
+	    			";
+     
 	endif; 	    
 	$wp_query = $tmp_query;    
 
