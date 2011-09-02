@@ -195,7 +195,7 @@ class RW_Meta_Box {
 			$meta = get_post_meta($post->ID, $field['id'], !(isset($field['multiple']) && $field['multiple']));
 			$meta = !empty($meta) ? $meta : $field['std'];
 
-			echo '<tr class="test">';
+			echo '<tr class="'.$field['id'].'">';
 			// call separated methods for displaying each type of field
 			call_user_func(array(&$this, 'show_field_' . $field['type']), $field, $meta);
 			echo '</tr>';
@@ -1083,6 +1083,7 @@ function metabox_enqueue() {
 	wp_register_script ( 'jf-metabox-tabs', $path. 'metabox-tabs.js');
 
 	wp_enqueue_script('jf-metabox-tabs');
+ 	wp_enqueue_script('jquerycustom', get_template_directory_uri().'/library/js/jquery-custom.js', array('jquery') );
 	wp_enqueue_style('jf-color');
 	wp_enqueue_style('metabox-tabs-css');
 }
