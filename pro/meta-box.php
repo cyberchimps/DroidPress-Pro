@@ -731,6 +731,65 @@ function initialize_the_meta_boxes() {
 		)
 	);
 	
+	$meta_boxes[] = array(
+		'id' => 'slides',
+		'title' => 'Custom Feature Slides',
+		'pages' => array($themeslug.'_custom_slides'),
+
+		'tabs' => array(
+			array(
+				'fields' => array(
+
+					array(
+						'name' => 'Custom Slide Link',
+						'desc' => 'Enter your link here',
+						'id' => $prefix . 'url',
+						'type' => 'text',
+						'std' => ''
+					),
+					array(
+						'name' => 'Custom Slide Image',
+						'desc' => 'Upload your image here:',
+						'id' => $prefix . 'image',
+						'type' => 'image',
+						'std' => ''
+					),
+					array(
+						'name' => 'Hide Title Bar',
+						'desc' => 'Click to disable the title bar on this post:',
+						'id' => $prefix . 'hidetitle',
+						'type' => 'checkbox',
+						'std' => ''
+					),
+
+					array(
+						'name' => 'Custom Thumbnail',
+						'desc' => 'Use the image uploader to upload a custom navigation thumbnail',
+						'id' => $prefix . 'custom_thumb',
+						'type' => 'image'
+					),
+					
+					array(
+						'name' => 'Need help?',
+						'desc' => '',
+						'id' => '',
+						'type' => 'sliderhelp',
+						'std' => ''
+			),
+					
+					array(
+						'name' => 'Want to re-order your slides?',
+						'desc' => '',
+						'id' => '',
+						'type' => 'reorder',
+						'std' => ''
+			),
+				)
+			)
+		)
+	);
+
+	
 		$terms = get_terms('slide_categories', 'hide_empty=0');
 
 	$slideroptions = array();
