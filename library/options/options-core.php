@@ -130,7 +130,7 @@ function theme_options_do_page() {
 	<ul>
 		<li><a href="http://cyberchimps.com/store/" target="_blank">CyberChimps Store</a></li>
 		<li><a href="http://cyberchimps.com/support/" target="_blank">Support</a></li>
-		<li><a href="http://cyberchimps.com/ifeaturepro/docs/">Docs</a></li>
+		<li><a href="http://cyberchimps.com/droidpresspro/docs/" target="_blank">Docs</a></li>
 		<li><a href="http://cyberchimps.com/forum/" target="_blank">Forum</a></li>
 		<li><a href="http://twitter.com/#!/cyberchimps" target="_blank">Twitter</a></li>
 		<li><a href="http://www.facebook.com/CyberChimps" target="_blank">Facebook</a></li>
