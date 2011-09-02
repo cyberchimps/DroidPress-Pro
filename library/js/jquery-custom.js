@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
 		return false;
 	}
 
-	if_check_slider_value();
+	dp_check_slider_value();
 
 	$("select#dp_slider_type").change(function() {
 		dp_check_slider_value();
