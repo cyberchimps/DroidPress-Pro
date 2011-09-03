@@ -219,11 +219,11 @@
 /* Query posts based on theme/meta options */
 
 	if ( $type == '0') {
-    	query_posts( array ('post_type' => 'if_custom_slides', 'showposts' => 20,  'slide_categories' => get_post_meta($post->ID, 'slider_category' , true)  ) );
+    	query_posts( array ('post_type' => 'dp_custom_slides', 'showposts' => 20,  'slide_categories' => get_post_meta($post->ID, 'slider_category' , true)  ) );
     }
     	
     elseif ($type == '' && $usecustomslides = 'posts') {
-    	query_posts( array ('post_type' => 'if_custom_slides', 'showposts' => 20,  'slide_categories' => get_post_meta($post->ID, 'slider_category' , true)  ) );
+    	query_posts( array ('post_type' => 'dp_custom_slides', 'showposts' => 20,  'slide_categories' => get_post_meta($post->ID, 'slider_category' , true)  ) );
     }
     
     else {
