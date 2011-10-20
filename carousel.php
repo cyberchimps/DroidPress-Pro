@@ -53,7 +53,7 @@
 
 	    	$image 		= get_post_meta($post->ID, 'post_image' , true);  
 	    	$title 		= get_post_meta($post->ID, 'post_title' , true);  
-	    	$link 		= get_post_meta($post->ID, 'post_link' , true);
+	    	$link 		= get_post_meta($post->ID, 'post_url' , true);
 	    	$imagesized = "$root/library/wt/wordthumb.php?src=$image&a=c&h=150&w=150";
 
 			/* End variables */	
