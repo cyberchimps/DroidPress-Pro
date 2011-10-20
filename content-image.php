@@ -14,6 +14,7 @@
 	$excerpts = $options[$themeslug.'_show_excerpts'];
 	$showfblike		= $options[$themeslug.'_show_fb_like'];
 	$showgplus		= $options[$themeslug.'_show_gplus'];
+	$root = get_template_directory_uri();
 	
 /* End define variables. */	
 	
@@ -23,7 +24,7 @@
 			
 	<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 
-			<div class ="format-image"><img src="<?php echo $root ;?>/images/formats/image.png" height="50px" width="50px" /></div><h2 class="posts_title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+			<div class ="format-icon"><img src="<?php echo $root ;?>/images/formats/image.png" height="50px" width="50px" /></div><h2 class="posts_title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 
 		<?php get_template_part('meta', 'index' ); ?>
 						
