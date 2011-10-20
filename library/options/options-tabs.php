@@ -84,7 +84,7 @@ array( "name" => "Choose Menu Color",
 	"std" => ""),
 	
 array( "name" => "Choose a Menu Font:",  
-    "desc" => "(Default is Helvetica Neue)",  
+    "desc" => "(Default is Arial)",  
     "id" => $shortname."_menu_font",  
     "type" => "select12",  
     "std" => ""),
