@@ -33,8 +33,6 @@ get_header(); ?>
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			
 				<div class="post_container">
-				
-					<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
 
 					<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			
@@ -45,6 +43,9 @@ get_header(); ?>
 							<div class="entry">
 								<?php the_content(); ?>
 							</div><!--end entry-->
+							
+						<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
+							
 						<?php edit_post_link('Edit', '<p>', '</p>'); ?>
 						
 						<?php if ($showgplus == "1"):?>

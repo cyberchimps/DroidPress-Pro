@@ -6,6 +6,7 @@ Version 1.0.1 (10-20-2011)
 -Fixed some image paths related to post format icons.
 -Added definition title and text styling. 
 -Changed default font family to Arial, Helvetica, serif. 
+-Added wp_link_pages to content template. 
 
 Version 1.0 (09-02-2011)
 -Initial release.
