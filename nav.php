@@ -13,12 +13,6 @@
 
 /* End globals. */	
 
-/* Define variables. */	
-
-	$homeimage		= $options['file3'];
-
-/* End variable definition. */
-
 ?>	
 				
 <div id="navbackground">

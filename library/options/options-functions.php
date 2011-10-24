@@ -17,7 +17,8 @@ function hide_post_icons() {
 	if ($options[$themeslug.'_hide_post_icons'] == "1") {
 
 		echo '<style type="text/css">';
-		echo ".format-image {display: none;}";
+		echo ".format-icon {display: none;}";
+ 		echo ".post_container {padding-left: 15px;}";
 		echo '</style>';
 		
 	}

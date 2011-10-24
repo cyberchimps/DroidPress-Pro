@@ -98,13 +98,6 @@ if ( function_exists( 'add_theme_support' ) ) {
 // This theme styles the visual editor with editor-style.css to match the theme style.
 	add_editor_style();
 	
-// Load jQuery
-	if ( !is_admin() ) {
-	   wp_deregister_script('jquery');
-	   wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"), false);
-	   wp_enqueue_script('jquery');
-	}
-
 /**
 * Attach CSS3PIE behavior to elements
 * Add elements here that need PIE applied
@@ -421,28 +414,26 @@ function plusone(){
 add_action('wp_head', 'plusone');
 
 
-// Register superfish scripts
-	
-function add_scripts() {
- 
-    if (!is_admin()) { // Add the scripts, but not to the wp-admin section.
-    // Adjust the below path to where scripts dir is, if you must.
-    $scriptdir = get_template_directory_uri() ."/library/sf/";
- 
-    // Register the Superfish javascript file
-    wp_register_script( 'superfish', $scriptdir.'sf.js', false, '1.4.8');
-    wp_register_script( 'sf-menu', $scriptdir.'sf-menu.js');
-    // Now the superfish CSS
+// Call Superfish
+if ( !is_admin() ) 
+{
+	function droidpress_superfish()
+ 	{  
    
-    //load the scripts and style.
-	wp_enqueue_style('superfish-css');
-    wp_enqueue_script('superfish');
-    wp_enqueue_script('sf-menu');
-    } // end the !is_admin function
-} //end add_our_scripts function
+    	// Adjust the below path to where scripts dir is, if you must.
+    	$scriptdir = get_template_directory_uri() ."/library/sf/";
  
-//Add our function to the wp_head. You can also use wp_print_scripts.
-add_action( 'wp_head', 'add_scripts',0);
+    	// Register the Superfish javascript file
+    	wp_register_script( 'superfish', $scriptdir.'sf.js', false, '1.4.8');
+    	wp_register_script( 'sf-menu', $scriptdir.'sf-menu.js');
+   
+   		 //load the scripts.
+    	wp_enqueue_script('superfish');
+    	wp_enqueue_script('sf-menu');
+    	
+  	}
+add_action('wp_enqueue_scripts', 'droidpress_superfish');
+}
 	
 	// Register menu names
 	

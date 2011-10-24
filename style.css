@@ -4,7 +4,7 @@ Theme URI: http://cyberchimps.com/droidpresspro/
 Description: A premium WordPress theme designed by CyberChimps.com inspired by the popular Android mobile phone operating system by Google. DroidPress features customizable theme options on a per-page basis, a feature posts section, post format support, feature slider, callout section, dynamic header for custom logo, social icons, widgetized sidebar and footer, and typography support including Typekit and Google Fonts.
 Author: CyberChimps
 Author URI: http://cyberchimps.com/
-Version: 1.0.1
+Version: 1.0.2
 Tags: green, blue, dark, two-columns, fixed-width, custom-header, custom-menu, threaded-comments, sticky-post
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -41,28 +41,48 @@ body { font-size: 14px;background-color: #303030;	}
 /* Fonts  */
 
 h1 { 
-	font-size: 18px;
-	font-weight: bold;
+	font-size: 22px;
+	line-height: 1.5em;
 }
 
 h2 { 
-	font-size: 16px;
-	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.5em;
 }
 
 h3 { 
-	font-size: 14px;
-	font-weight: bold;
+	font-size: 18px;	
+	line-height: 1.5em;
+}
+
+h4 { 
+	font-size: 16px;	
+	line-height: 1.5em;
+}
+
+h5 { 
+	font-size: 14px;	
+	line-height: 1.5em;
+}
+
+h6 { 
+	font-size: 12px;	
+	line-height: 1.5em;
 }
 
 .archive-title {
 	font-size: 32px;
-	margin-left: 33px;
+	margin-left: 25px;
+}
+
+.archive_posts_title {
+	margin-bottom: 10px;
+	margin-left: -2px;
 }
 
 .archive_posts_title a {
 	font-size: 32px;
-	margin-left: 27px;
+	font-weight: 400;
 	margin-bottom: 10px;
 	color: #000;
 }
@@ -282,6 +302,7 @@ ol {
 .posts_title {
 	font-size: 38px;
 	margin-bottom: 8px;
+	font-weight: 400;
 }
 
 .posts_title a{
@@ -310,6 +331,10 @@ ol {
 
 .entry a:hover {
 	color: #97C03D;
+}
+
+.entry p {
+	clear: none;
 }
 
 .meta { 
@@ -915,13 +940,15 @@ li { padding-left: 5px; }
 	max-width: 200px;
 	float: right;
 	position: relative;
+	margin-top: 8px;
 }
 
 #afterfootermenu {
 	float:left;
 	position: absolute;
 	width: 400px;
-	height: 40px;
+	height: 34px;
+	margin-top: 8px;
 	overflow: hidden;
 }
 
@@ -940,7 +967,7 @@ li { padding-left: 5px; }
 	display: inline; 
 }
 
-.credit { height: 22px; width: 148px; z-index: 99;margin: auto;	}
+.credit { height: 22px; width: 142px; z-index: 99;margin: auto;	margin-top: 5px;}
 
 /* Nav */
 
@@ -1098,13 +1125,13 @@ ul.sf-menu li li li.sfHover ul {
 
 /*** arrows **/
 .sf-menu a.sf-with-ul {
-    padding-right:  15px;
+    padding-right:  20px;
     min-width:      1px; /* trigger IE7 hasLayout so spans position accurately */
 }
 .sf-sub-indicator {
     position:       absolute;
     display:        block;
-    right:          3px;
+    right:          6px;
     top:            1.05em; /* IE6 only */
     width:          10px;
     height:         10px;

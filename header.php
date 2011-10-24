@@ -19,7 +19,6 @@
 	$blogtitle = $options[$themeslug.'_home_title'];
 	$homekeywords = $options[$themeslug.'_home_keywords'];
 	$homedescription = $options[$themeslug.'_home_description'];
-	$logo = $options['file'] ;
 	$favicon = $options['file2'];
 	$title = get_post_meta($post->ID, 'seo_title' , true);
 	$pagedescription = get_post_meta($post->ID, 'seo_description' , true);
@@ -160,17 +159,11 @@
 								<?php get_template_part('icons', 'header'); ?>
 							</div><!-- end social -->
 					</div><!-- end header_right -->
-					<!-- Inserts Site Logo -->
-						<?php if ($logo != ''):?>
-							<div id="logo">
-								<a href="<?php echo home_url(); ?>/"><img src="<?php echo stripslashes($logo['url']); ?>" alt="logo"></a>
-							</div>
-						<?php endif;?>
-						<?php if ($logo == '' ):?>
+					
 							<div id="sitename">
 								<h1 class="sitename"><a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?> </a></h1>
 							</div>
-						<?php endif;?>
+			
 				</div><!-- end headerwrap -->
 				<?php get_template_part('nav', 'header' ); ?>
 			</div><!-- end header -->
