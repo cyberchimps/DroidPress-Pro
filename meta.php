@@ -24,7 +24,7 @@
 
 
 <div class="meta">
-	<div class="meta-category"><?php if ($category != '1'):?><?php the_category(' ') ?></div><div class="meta-rest"> on <?php endif;?><?php if ($date != '1'):?> <a href="<?php the_permalink() ?>"><?php the_time('F jS, Y') ?></a><?php endif;?> by <?php if ($author != '1'):?> <?php the_author_posts_link(); ?> <?php endif;?> - <?php if ($comments != '1'):?> <?php comments_popup_link('No Comments ', '1 Comment ', '% Comments '); ?><?php endif;?> 
+	<div class="meta-category"><?php if ($category != '1'):?><?php the_category(' ') ?></div><div class="meta-rest"> on <?php endif;?><?php if ($date != '1'):?> <a href="<?php the_permalink() ?>"><?php the_time('F jS, Y') ?></a><?php endif;?> <?php if ($author != '1'):?> by <?php the_author_posts_link(); ?> <?php endif;?> <?php if ($comments != '1'):?>-  <?php comments_popup_link('No Comments ', '1 Comment ', '% Comments '); ?><?php endif;?> 
 	</div>	
 	<div style="clear:both;"></div>
 </div>
