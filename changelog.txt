@@ -5,6 +5,8 @@ DroidPress Pro Changelog
 Version 1.0.3 (11-02-2011)
 -Added jQuery call in functions, was not implied by Superfish.
 -Reduced lineheight of post titles to fix unecessary distance between titles that take up more than one line. 
+-Adjusted height of post formats icons.
+-Fixed default font copy in theme options panel.
 
 Version 1.0.2 (10-23-2011)
 -Fixed margin on archive post title. 

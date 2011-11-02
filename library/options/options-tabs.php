@@ -72,7 +72,7 @@ array( "name" => "Help",
     "std" => ""),
     
 array( "name" => "Choose a Font:",  
-    "desc" => "(Default is Helvetica Neue)",  
+    "desc" => "(Default is Arial)",  
     "id" => $shortname."_font",  
     "type" => "select2",  
     "std" => ""),
