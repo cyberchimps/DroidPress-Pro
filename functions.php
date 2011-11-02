@@ -413,6 +413,12 @@ function plusone(){
 }
 add_action('wp_head', 'plusone');
 
+// Load jQuery
+ 	
+if ( !is_admin() ) {
+    wp_enqueue_script('jquery');
+}
+
 
 // Call Superfish
 if ( !is_admin() ) 
