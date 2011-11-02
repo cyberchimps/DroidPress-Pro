@@ -2,6 +2,10 @@ DroidPress Pro Changelog
 
 ****************************
 
+Version 1.0.3 (11-02-2011)
+-Added jQuery call in functions, was not implied by Superfish.
+-Reduced lineheight of post titles to fix unecessary distance between titles that take up more than one line. 
+
 Version 1.0.2 (10-23-2011)
 -Fixed margin on archive post title. 
 -Placed superfish script regstier calls into function that hooks into wp_enqueue_scripts, removed unecessary jQuery call. 

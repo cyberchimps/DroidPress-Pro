@@ -4,7 +4,7 @@ Theme URI: http://cyberchimps.com/droidpresspro/
 Description: A premium WordPress theme designed by CyberChimps.com inspired by the popular Android mobile phone operating system by Google. DroidPress features customizable theme options on a per-page basis, a feature posts section, post format support, feature slider, callout section, dynamic header for custom logo, social icons, widgetized sidebar and footer, and typography support including Typekit and Google Fonts.
 Author: CyberChimps
 Author URI: http://cyberchimps.com/
-Version: 1.0.2
+Version: 1.0.3
 Tags: green, blue, dark, two-columns, fixed-width, custom-header, custom-menu, threaded-comments, sticky-post
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -303,6 +303,7 @@ ol {
 	font-size: 38px;
 	margin-bottom: 8px;
 	font-weight: 400;
+	line-height: 1.1em;
 }
 
 .posts_title a{
@@ -455,6 +456,7 @@ blockquote p { }
 	padding: 3px; 
 	margin-right:4px;
 	margin-top: -2px;
+	margin-bottom: 5px;
 }
 
 .meta-category a:hover {
