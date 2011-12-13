@@ -58,7 +58,7 @@ function cyberchimps_store_page_init() {
 	<div id="container">
 	
 	<div class="theme_images">
-		<a href="http://cyberchimps.com/ifeaturepro/" target="_blank"><img src="<?php echo $root ;?>/images/themes/ifeaturepro2.png" /></a>
+		<a href="http://cyberchimps.com/ifeaturepro/" target="_blank"><img src="<?php echo $root ;?>/images/themes/ifeaturepro.png" /></a>
 	</div>
 	<div class="theme_desciptions">
 		<div class="theme_titles"><a href="http://cyberchimps.com/ifeaturepro/" target="_blank">iFeature Pro</a></div>

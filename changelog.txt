@@ -2,6 +2,9 @@ DroidPress Pro Changelog
 
 ****************************
 
+Version 1.0.4 (12-12-2011)
+-Visual fix to theme options for 3.3 compatibility. 
+
 Version 1.0.3 (11-02-2011)
 -Added jQuery call in functions, was not implied by Superfish.
 -Reduced lineheight of post titles to fix unecessary distance between titles that take up more than one line. 
